@@ -84,8 +84,39 @@
 ![docker](DockerHighLevelArchitecture.png)
 
 ## Info - What is Container Runtime?
+<pre>
+- is a low-level software to manage containers and container images
+- is not user-friendly, hence end-user like us generally won't use container runtimes
+- examples
+  - runC is a Container Runtime
+  - CRI-O is a container runtime
+</pre>
 
 ## Info - What is Container Engine?
+<pre>
+- is a high-level software to manage containers and container images 
+- is user-friendly
+- internally container engines depends on Container Runtime to manage containers and images
+- examples
+  - Docker is a Container Engine that depends on containerd which in turn depends on runC Container Runtime
+  - Podman is a Container Engine that depends on CRI-O Container Runtime
+</pre>
+
+## Info - What is Docker Image?
+<pre>
+- is a blueprint of a Container
+- it has one application and all its dependent softwares, libraries, etc required to run the application
+</pre>
+
+## Info - What is a Docker Container?
+<pre>
+- container is an instance of a Docker Image
+- all the sofwares and tools that are installed in the docker image are available in each container created from a Docker Image
+- container gets a Private IP address
+- containers also files/folders ( file system )
+- container has port-range ( 0-65535 )
+- container has virtual network cards ( software defined network cards )
+</pre>
 
 ## Info - Docker Overview
 
