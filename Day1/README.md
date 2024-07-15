@@ -5,6 +5,12 @@
 - is virtualization software
 - with virtualization software, we can run multiple Operating Systems in the laptop/desktop/workstation/server
 - many OS can run simultaneously
+- this type of virtualization is called heavy-weight virtualization, the reason is each Virtual Machine must be allocated with dedicated hardware resources
+  - CPU
+  - Memory (RAM)
+  - Storage ( Hard Disk or SSDs )
+  - Network Card
+  - Graphics Card
 - there are 2 types of virtualization software or hypervisors
   - type 1
     - is also called as Bare Metal Hypervisors
@@ -27,7 +33,6 @@
       - Parallels ( supported in Mac OS-X )
       - KVM - opensource hypervisor software supported in all Linux distributions
       - Microsoft Hyper-V
-  
 </pre>
 
 ## Info - What is Container Runtime?
