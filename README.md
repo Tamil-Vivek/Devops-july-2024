@@ -14,10 +14,3 @@ https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX1+a0m9IouvU6KN7NAziIM
 - Once you are done with the pre-test either you will leave a message via WebEx chat or you can notify me
 - Once everyone completes the pre-test we will start the training
 </pre>
-
-#### Pariticipants who are facing lab issues
-Below user are not able to register pre-test with their gmail id
-<pre>
-- You are able to login to Ubuntu machine but not able to register for the pre-test with your personal email
-- USER 02, 03, 04, 06, 07, 10,11, 12, 13, 14, 15, 17, 20, 23, 24 
-</pre>
