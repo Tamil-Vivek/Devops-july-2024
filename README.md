@@ -1,6 +1,6 @@
 # Devops July 2024 
 
-## Pre-test url
+## Pre-test url ( Access the below link from RPS Cloud Lab machine )
 <pre>
 https://rpsconsulting116.examly.io/contest/publicU2FsdGVkX1+a0m9IouvU6KN7NAziIMbMKNYLqXpcIHYgtF0ehKe943h61x6+3buQKPCOJ3l/IZsAIfOWOxhEZw==
 </pre>
@@ -13,4 +13,9 @@ https://rpsconsulting116.examly.io/contest/publicU2FsdGVkX1+a0m9IouvU6KN7NAziIMb
 - You don't have to share your Date of Birth
 - Once you are done with the pre-test either you will leave a message via WebEx chat or you can notify me
 - Once everyone completes the pre-test we will start the training
+</pre>
+
+#### Pariticipants who are facing lab issues
+<pre>
+- USER 02, 11 no lab machine is mapped 
 </pre>
