@@ -361,3 +361,11 @@ Expected output
 ![image](https://github.com/user-attachments/assets/c33767d6-2a84-4116-98f0-9f04442f8673)
 ![image](https://github.com/user-attachments/assets/21282070-a916-4a97-8080-00199b13a2f7)
 ![image](https://github.com/user-attachments/assets/2e9e0980-140c-44f4-91bd-f846500edc53)
+
+#### Things to note
+<pre>
+- each Docker Image has one or more layers
+- just like each Docker Image has an unique name and ID, docker layers also has an unique ID
+- the Docker layers are independent and they can used in multiple Docker Images for reuse
+- this is how, docker image format helps in building a small footprint docker images
+</pre>
