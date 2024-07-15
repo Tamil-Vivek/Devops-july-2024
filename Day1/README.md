@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/22156215-aa28-4e18-b8f4-85753ea5e57f)![image](https://github.com/user-attachments/assets/7a4cfe0f-91a5-41e2-b111-7915485ddad9)# Day 1
+# Day 1
+
 ## Info - How many physical servers are required to support 1000 Operating System when no virtualization supported
 - 1000 Physical servers are required
 - Your organization has to procure 1000 servers
@@ -523,6 +524,8 @@ Expected ouput
 ![image](https://github.com/user-attachments/assets/be91c487-0ef6-4b21-93f7-87a6f1cc3206)
 ![image](https://github.com/user-attachments/assets/64683c45-7fe7-44f3-b0aa-9fbe3787aff8)
 ![image](https://github.com/user-attachments/assets/e1e4d87c-bb8e-43de-af5f-ee550293005b)
+![image](https://github.com/user-attachments/assets/22156215-aa28-4e18-b8f4-85753ea5e57f)
+![image](https://github.com/user-attachments/assets/7a4cfe0f-91a5-41e2-b111-7915485ddad9)
 
 
 ## Request to share your Day1 feedback at the below URL
