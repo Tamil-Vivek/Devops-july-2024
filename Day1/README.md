@@ -381,7 +381,8 @@ docker images
 Expected output
 ![image](https://github.com/user-attachments/assets/f92728f8-4041-4516-b85e-d5e0b9ef5fd7)
 ![image](https://github.com/user-attachments/assets/49f4970d-2c48-4678-b1ed-8a6918d30e37)
-
+![image](https://github.com/user-attachments/assets/22156215-aa28-4e18-b8f4-85753ea5e57f)
+![image](https://github.com/user-attachments/assets/7a4cfe0f-91a5-41e2-b111-7915485ddad9)
 ## Lab - Checking the status of docker server service
 ```
 sudo systemctl status docker
@@ -524,8 +525,7 @@ Expected ouput
 ![image](https://github.com/user-attachments/assets/be91c487-0ef6-4b21-93f7-87a6f1cc3206)
 ![image](https://github.com/user-attachments/assets/64683c45-7fe7-44f3-b0aa-9fbe3787aff8)
 ![image](https://github.com/user-attachments/assets/e1e4d87c-bb8e-43de-af5f-ee550293005b)
-![image](https://github.com/user-attachments/assets/22156215-aa28-4e18-b8f4-85753ea5e57f)
-![image](https://github.com/user-attachments/assets/7a4cfe0f-91a5-41e2-b111-7915485ddad9)
+
 
 
 ## Request to share your Day1 feedback at the below URL
