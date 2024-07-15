@@ -14,3 +14,15 @@ https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX1+a0m9IouvU6KN7NAziIM
 - Once you are done with the pre-test either you will leave a message via WebEx chat or you can notify me
 - Once everyone completes the pre-test we will start the training
 </pre>
+
+
+## Lab Check
+
+Let's see if docker is installed
+<pre>
+docker --version
+docker images
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/daa8309e-2ed9-4929-8d49-3a859bb99a8c)
