@@ -380,3 +380,11 @@ docker images
 Expected output
 ![image](https://github.com/user-attachments/assets/f92728f8-4041-4516-b85e-d5e0b9ef5fd7)
 ![image](https://github.com/user-attachments/assets/49f4970d-2c48-4678-b1ed-8a6918d30e37)
+
+## Lab - Checking the status of docker server service
+```
+sudo systemctl status docker
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/38b12457-124f-47b5-a63f-016d5610ed9e)
