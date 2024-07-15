@@ -165,3 +165,14 @@
   - Docker SWARM 
   - Google Kubernetes
   - Red Hat Openshift
+
+## Lab - Finding docker version
+```
+docker --version
+```
+Finding more details about your docker setup
+```
+docker info
+```
+Expected output
+![image](https://github.com/user-attachments/assets/9d8aba72-f38d-42e0-b29f-66b3f134cccf)
