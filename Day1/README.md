@@ -226,3 +226,11 @@ apt update && apt install -y net-tools iputils-ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/ac80a6c9-46f8-49c7-8fa7-e62fb0be8b90)
+
+Comong out of the container shell
+```
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2b268fce-2a9b-4dc5-a976-6e0514519794)
