@@ -399,3 +399,35 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/714d94fd-6c69-44ac-8d6c-aa6134480c23)
+
+## Lab - Creating mysql db server container
+```
+docker run -d --name db1 --hostname db1 -e MYSQL_ROOT_PASSWORD=root@123 mysql:latest
+docker ps
+```
+
+Get inside the mysql container shell
+```
+docker exec -it db1 /bin/sh
+```
+
+Connect to the mysql server using mysql client, when prompts for password type 'root@123' without quotes
+```
+mysql -u root -p
+SHOW DATABASES;
+CREATE DATABASE tektutor;
+USE tektutor;
+CREATE TABLE training ( id INT NOT NULL, name VARCHAR(250) NOT NULL, duration VARCHAR(250) NOT NULL, PRIMARY KEY(id) );
+
+DESCRIBE TABLE training;
+
+INSERT INTO training VALUES ( 1, "DevOps", "5 Days" );
+INSERT INTO training VALUES ( 2, "Developing Golang Microservices", "5 Days" );
+INSERT INTO training VALUES ( 3, "Developing Windows Device Drivers", "5 Days" );
+
+SELECT * FROM training;
+exit
+exit
+```
+
+Expected output
