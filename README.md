@@ -16,12 +16,8 @@ https://rpsconsulting116.examly.io/contest/publicU2FsdGVkX1+a0m9IouvU6KN7NAziIMb
 </pre>
 
 #### Pariticipants who are facing lab issues
-<pre>
-- USER 02 no lab machine is mapped 
-</pre>
-
 Below user are not able to register pre-test with their gmail id
 <pre>
 - You are able to login to Ubuntu machine but not able to register for the pre-test with your personal email
-- USER 02, 03, 04, 06, 10, 12, 13, 14, 15, 17, 20, 23, 24 
+- USER 02, 03, 04, 06, 07, 10,11, 12, 13, 14, 15, 17, 20, 23, 24 
 </pre>
