@@ -80,6 +80,9 @@
 - containers shares the Hardware resources from the underlying Operating System ( Host or Guest OS )
 </pre>
 
+## Info - Docker High-Level Architecture
+![docker](DockerHighLevelArchitecture.png)
+
 ## Info - What is Container Runtime?
 
 ## Info - What is Container Engine?
