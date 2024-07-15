@@ -118,7 +118,26 @@
 - container has virtual network cards ( software defined network cards )
 </pre>
 
+## Info - What is Docker Registry
+<pre>
+- Docker Registry it is a server that hosts multiple Docker Images
+- Usually uses Sonatype Nexus or JFrog Artifactory 
+- Local Docker Registry is a just a folder on your system
+- Remote & Private Registry, they are servers which could be powered by either Nexus or Artifactory
+</pre>  
+
 ## Info - Docker Overview
+<pre>
+- Docker is a Container Engine
+- follows Client/Server Architecture
+- it comes in 2 flavours
+  1. Docker Community Edition - Docker CE
+  2. Docker Enterprise Edition - Docker EE
+- Docker supports 3 types of Container Registries
+  1. Local Docker Registry
+  2. Private Docker Registry and
+  3. Remote Docker Registry
+</pre>
 
 ## Info - Docker Alternatives
 
