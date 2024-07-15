@@ -369,3 +369,14 @@ Expected output
 - the Docker layers are independent and they can used in multiple Docker Images for reuse
 - this is how, docker image format helps in building a small footprint docker images
 </pre>
+
+## Lab - Deleting an image from local docker registry
+```
+docker images
+docker rmi mysql:latest
+docker images
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f92728f8-4041-4516-b85e-d5e0b9ef5fd7)
+![image](https://github.com/user-attachments/assets/49f4970d-2c48-4678-b1ed-8a6918d30e37)
