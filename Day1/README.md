@@ -176,3 +176,4 @@ docker info
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/9d8aba72-f38d-42e0-b29f-66b3f134cccf)
+![image](https://github.com/user-attachments/assets/a186542b-510c-49b7-9754-3d9c61660b79)
