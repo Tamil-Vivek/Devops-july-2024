@@ -314,3 +314,16 @@ exit
 
 Expected output
 ![image](https://github.com/user-attachments/assets/a9856e9f-1241-415e-b3c8-da66529fcab7)
+
+## Lab - Stopping and starting multiple containers with single command
+```
+docker ps
+docker stop c1 c2
+docker ps
+docker ps -a
+docker start c1 c2
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/65d1b017-0bef-4e2b-b751-e1e98bcd474a)
