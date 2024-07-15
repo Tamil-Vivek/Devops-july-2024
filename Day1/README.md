@@ -141,4 +141,8 @@
 </pre>
 
 ## Info - Docker Alternatives
-
+<pre>
+- containerd
+- Podman
+- LXC
+</pre>
