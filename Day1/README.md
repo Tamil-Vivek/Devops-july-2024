@@ -241,10 +241,13 @@ docker ps
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/93bb981c-2fae-4b32-a87c-d51605c36033)
+
 
 ## Lab - Listing all containers
 ```
 docker ps -a
 ```
 Expected output
+![image](https://github.com/user-attachments/assets/c26b6737-ccb7-4d8d-8e9f-9a3cebbbabcc)
 
