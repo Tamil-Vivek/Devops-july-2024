@@ -71,14 +71,13 @@
 - commons characteristics between a virtual machine and a container
   - containers get their own IP address just like virtual machines
   - containers has file system just like virtual machines
-  - containers has their own network card just like virtual machines
+  - containers has their own network card (virtual) just like virtual machines
   - container has their own network stack just like virtual machines
-- container represents a single application, while virtual represents an fully functional OS
+  - containers has their own Port range ( 0-65535 ports ) just like virtual machines
+  - container represents a single application, while virtual represents an fully functional OS
 - containers and hypervisors are complementing technology not competing technology
 - containers runs on top of some Operating System
 - containers shares the Hardware resources from the underlying Operating System ( Host or Guest OS )
-  
-  
 </pre>
 
 ## Info - What is Container Runtime?
