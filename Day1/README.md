@@ -202,3 +202,4 @@ docker run -it --name c1 --hostname c1 ubuntu:16.04 /bin/bash
 
 Expected output
 ![image](https://github.com/user-attachments/assets/0627d8ec-a25f-4d36-8641-46d09ec348ec)
+![image](https://github.com/user-attachments/assets/5205da11-7fb1-482d-87a8-e8e941c4588c)
