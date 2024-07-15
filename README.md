@@ -26,3 +26,29 @@ docker images
 
 Expected output
 ![image](https://github.com/user-attachments/assets/a5f46444-b08f-47b2-9345-27f25bc29410)
+
+Let's if ansible is installed
+<pre>
+ansible --version  
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/78c8c70b-d56f-4522-98c4-ee8105742177)
+
+Let's see if Maven build tool and JDK is installed
+<pre>
+mvn --version  
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/b2c52581-a92c-46ab-953d-8a81fd3a2dcc)
+
+Let's see if Jenkins is installed
+<pre>
+cd ~/Downloads
+java -jar ./jenkins.war
+</pre>
+
+Then you navigate to http://localhost:8080 on your firefox web browser within the Ubuntu Lab machine
+Expected output
+![image](https://github.com/user-attachments/assets/5ec242b2-1e0f-4ec2-8215-9b964df86094)
