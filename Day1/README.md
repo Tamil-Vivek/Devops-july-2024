@@ -388,3 +388,14 @@ sudo systemctl status docker
 
 Expected output
 ![image](https://github.com/user-attachments/assets/38b12457-124f-47b5-a63f-016d5610ed9e)
+
+## Lab - Renaming a container
+```
+docker ps
+docker rename c1 container-1
+docker rename c2 container-2
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/714d94fd-6c69-44ac-8d6c-aa6134480c23)
