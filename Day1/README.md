@@ -489,3 +489,37 @@ Expected output
 ![image](https://github.com/user-attachments/assets/ab08c0bc-0cb8-4a38-917a-29b61ab37fbc)
 ![image](https://github.com/user-attachments/assets/4b356cc7-c191-48b0-b7a2-f3580f46e829)
 ![image](https://github.com/user-attachments/assets/ca5d4103-c222-418e-8282-600998a2ad6a)
+
+## Lab - Deleting all containers without calling out their names
+```
+docker rm -f $(docker ps -aq)
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/484a3e9b-d807-4b50-80a7-07fd49be7dbd)
+
+## Lab - Port forwarding to expose the container services to remote machines
+```
+docker run -d --name nginx1 --hostname nginx1 nginx:latest
+docker ps
+docker inspect nginx1 | grep IPA
+curl http://172.17.0.2:80
+docker rm -f nginx1
+```
+
+As you noticed in the above command, the nginx1 container is assigned with a Private IP Address, hence it is accessible only on the machine where the container is running.
+
+In order to make it accessible from remote machines, we use port-forwarding
+```
+docker run -d --name nginx1 --hostname nginx1 -p 8080:80 nginx:latest
+docker ps
+ifconfig
+curl http://192.168.1.104:8080
+```
+Expected ouput
+![image](https://github.com/user-attachments/assets/7747ddfc-059d-45ef-877d-07f874c2dde2)
+![image](https://github.com/user-attachments/assets/5eaf041b-f7dd-42fa-b58c-4773ca679d27)
+![image](https://github.com/user-attachments/assets/02c3dc28-b015-4b20-9e8c-3eb65a294370)
+![image](https://github.com/user-attachments/assets/be91c487-0ef6-4b21-93f7-87a6f1cc3206)
+![image](https://github.com/user-attachments/assets/64683c45-7fe7-44f3-b0aa-9fbe3787aff8)
+![image](https://github.com/user-attachments/assets/e1e4d87c-bb8e-43de-af5f-ee550293005b)
