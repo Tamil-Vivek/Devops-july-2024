@@ -338,5 +338,6 @@ docker inspect -f {{.NetworkSettings.IPAddress}} c2
 
 Expected output
 ![image](https://github.com/user-attachments/assets/94e538e6-4c08-487f-b691-003b37950e4f)
+![image](https://github.com/user-attachments/assets/6a8ac48a-27a7-4537-826e-14fcb318e280)
 ![image](https://github.com/user-attachments/assets/93ad6446-28c6-4397-864b-1aa8268a2131)
 ![image](https://github.com/user-attachments/assets/e57338d9-64c6-4b99-b22e-13131192074d)
