@@ -1,4 +1,4 @@
-# Day 1
+![image](https://github.com/user-attachments/assets/7a4cfe0f-91a5-41e2-b111-7915485ddad9)# Day 1
 ## Info - How many physical servers are required to support 1000 Operating System when no virtualization supported
 - 1000 Physical servers are required
 - Your organization has to procure 1000 servers
@@ -185,3 +185,11 @@ docker images
 
 Expected output
 ![image](https://github.com/user-attachments/assets/923413f8-cc16-40c2-9aaf-9f3489909a9c)
+
+## Lab - Downloading mysql docker image from Docker Hub Registry to Local Docker Registry
+```
+docker pull mysql:latest
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/efb4c808-cf4c-49c8-8038-01c031f2f5dc)
