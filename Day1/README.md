@@ -137,6 +137,7 @@
   1. Local Docker Registry
   2. Private Docker Registry and
   3. Remote Docker Registry
+- it is developed in Go lang by Docker Inc organization
 </pre>
 
 ## Info - Docker Alternatives
