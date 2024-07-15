@@ -262,3 +262,17 @@ exit
 
 Expected output
 ![image](https://github.com/user-attachments/assets/d8b95b00-ac82-46a6-9d5f-9e90389f4566)
+
+## Lab - Deleting a running container
+
+In order to delete a running container we must stop it before deleting it or use must force delete it
+```
+docker ps
+docker rm c1
+docker stop c1
+docker rm c1
+docker ps -a
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/46836394-9472-4336-bbc3-802c8cdf7668)
