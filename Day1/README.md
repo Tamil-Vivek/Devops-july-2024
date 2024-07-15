@@ -234,3 +234,17 @@ exit
 
 Expected output
 ![image](https://github.com/user-attachments/assets/2b268fce-2a9b-4dc5-a976-6e0514519794)
+
+## Lab - Listing the currently running containers
+```
+docker ps
+```
+
+Expected output
+
+## Lab - Listing all containers
+```
+docker ps -a
+```
+Expected output
+
