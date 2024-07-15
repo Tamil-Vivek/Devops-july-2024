@@ -193,3 +193,12 @@ docker pull mysql:latest
 
 Expected output
 ![image](https://github.com/user-attachments/assets/efb4c808-cf4c-49c8-8038-01c031f2f5dc)
+
+
+## Lab - Creating a creating in foreground(interactive) mode
+```
+docker run -it --name c1 --hostname c1 ubuntu:16.04 /bin/bash
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/0627d8ec-a25f-4d36-8641-46d09ec348ec)
