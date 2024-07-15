@@ -276,3 +276,25 @@ docker ps -a
 
 Expected output
 ![image](https://github.com/user-attachments/assets/46836394-9472-4336-bbc3-802c8cdf7668)
+
+
+## Lab - Coming out of container shell without using exit command
+
+As soon as you execute the below command, you will be taken inside the container shell automatically as we created the container in foreground(interactive) mode using -it(interactive terminal) switch.
+```
+docker run -it --name c1 --hostname c1 ubuntu:16.04 /bin/bash
+```
+
+In order to come out of the container without terminating the container, we need using the shortcut keys Ctrl+P followed by Ctrl+Q.
+```
+Ctrl + P
+Ctrl + Q
+```
+
+You can list the containers to see the c1 container is still running while you came outside the conainter shell
+```
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/9cd42930-640e-4ab6-904e-3eeab79023be)
