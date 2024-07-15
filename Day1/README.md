@@ -203,3 +203,26 @@ docker run -it --name c1 --hostname c1 ubuntu:16.04 /bin/bash
 Expected output
 ![image](https://github.com/user-attachments/assets/0627d8ec-a25f-4d36-8641-46d09ec348ec)
 ![image](https://github.com/user-attachments/assets/5205da11-7fb1-482d-87a8-e8e941c4588c)
+
+Finding the hostname from the container shell
+```
+hostname
+```
+
+Finding the IP address of the c1 container shell
+<pre>
+hostname -i
+</pre>
+
+Listing the files/folders inside the container file system
+```
+ls -l
+```
+
+Installing softwares inside container using the container shell
+```
+apt update && apt install -y net-tools iputils-ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/ac80a6c9-46f8-49c7-8fa7-e62fb0be8b90)
