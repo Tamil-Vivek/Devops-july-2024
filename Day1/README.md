@@ -436,3 +436,56 @@ Expected output
 ![image](https://github.com/user-attachments/assets/250d615e-b3dd-4892-81b1-bf7f0be6d1fe)
 ![image](https://github.com/user-attachments/assets/50a5d93b-0cb4-44ff-8121-4a33bd3b3373)
 ![image](https://github.com/user-attachments/assets/6b45e642-bb3e-4c6c-ad9c-b3798b1cfa34)
+
+## Lab - Using an external storage volume to save database, tables and records
+
+When prompts for password, type 'root@123' without quotes
+```
+mkdir -p /tmp/mysql
+ls -lha
+docker run -d --name db1 --hostname db1 -v /tmp/mysql:/var/lib/mysql mysql:latest
+docker ps
+docker exec -it db1 bash
+mysql -u root -p
+SHOW DATABASES;
+CREATE DATABASE tektutor;
+USE tektutor;
+CREATE TABLE training ( id INT NOT NULL, name VARCHAR(250) NOT NULL, duration VARCHAR(250) NOT NULL, PRIMARY KEY(id) );
+
+DESCRIBE TABLE training;
+
+INSERT INTO training VALUES ( 1, "DevOps", "5 Days" );
+INSERT INTO training VALUES ( 2, "Developing Golang Microservices", "5 Days" );
+INSERT INTO training VALUES ( 3, "Developing Windows Device Drivers", "5 Days" );
+
+SELECT * FROM training;
+exit
+exit
+```
+
+Come out of the db1 container and delete the db1 container
+```
+docker rm -f db1
+```
+
+Create a new container mounting the same path /tmp/mysql
+```
+docker run -d --name db1 --hostname db1 -v /tmp/mysql:/var/lib/mysql mysql:latest
+docker exec -it db1 bash
+mysql -u root -p
+SHOW DATABASES;
+USE tektutor;
+SHOW TABLES;
+SELECT * FROM training;
+exit
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/aeb0fa70-2599-4252-800a-db59fc66c509)
+![image](https://github.com/user-attachments/assets/98d0209f-c60a-41ef-a0ca-9e5e9f7dfd6e)
+![image](https://github.com/user-attachments/assets/ad0d192e-0415-4dbd-baca-aa0bf561466d)
+![image](https://github.com/user-attachments/assets/31968ab6-8fd1-4295-9e44-6c6838dea15a)
+![image](https://github.com/user-attachments/assets/ab08c0bc-0cb8-4a38-917a-29b61ab37fbc)
+![image](https://github.com/user-attachments/assets/4b356cc7-c191-48b0-b7a2-f3580f46e829)
+![image](https://github.com/user-attachments/assets/ca5d4103-c222-418e-8282-600998a2ad6a)
