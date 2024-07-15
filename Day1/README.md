@@ -1,10 +1,19 @@
 # Day 1
-
+## Info - How many physical servers are required to support 1000 Operating System when no virtualization supported
+- 1000 Physical servers are required
+- Your organization has to procure 1000 servers
+- we need a lab facility with power, network, 
+, sound-proofed room
+- servers are power hungry, they normally tend to consume more power(electricity)
+- real-estate expenses
+- if you need huge lab room, then the rental/lease cost for the lab facility will also be more
+- 
 ## Info - Hypervisor Overview
 <pre>
 - is virtualization software
 - with virtualization software, we can run multiple Operating Systems in the laptop/desktop/workstation/server
 - many OS can run simultaneously
+- we are able to consolidate more physical servers with minimal number of physical servers
 - this type of virtualization is called heavy-weight virtualization, the reason is each Virtual Machine must be allocated with dedicated hardware resources
   - CPU
   - Memory (RAM)
@@ -33,6 +42,43 @@
       - Parallels ( supported in Mac OS-X )
       - KVM - opensource hypervisor software supported in all Linux distributions
       - Microsoft Hyper-V
+</pre>
+
+## Info - What is the minimal number of Physical servers required to host 1000 Virtual Machine on top of Hypervisor software ?
+<pre>
+- 1 Physical server is enough to host 1000 Virtual Machines
+- HyperThreading
+  - each Physical CPU Core is capable of running 2 threads parallely
+  - hence each Physical CPU Core is treated/seen as 2/4/6 virtual/logical CPU Cores
+- Server Configuration
+  - Processor with atleast 512 CPU Cores ( 1024 virtual CPU Cores )
+  - 1 TB or more RAM
+  - 10 TB or more Storage ( Hard Disk or Solid Slate Disks )
+</pre>
+
+## Info - Containerization
+<pre>
+- is an application virtualization technology
+- is called light-weight virtualization technolgy
+  - because container's don't get their own dedicated hardware resources
+  - all containers running in the same OS shares the Hardware resources from underlying OS 
+- each container represents a single application or a single application process
+- container is not an Operating System
+- container doesn't have OS Kernel
+- containers will never be able to replace an Operating System
+- containers will never be able to replace a virtual machine or Hypervisors softwares
+- containers is not a replacement/alternate to Virtualization or Hypervisors of OS
+- commons characteristics between a virtual machine and a container
+  - containers get their own IP address just like virtual machines
+  - containers has file system just like virtual machines
+  - containers has their own network card just like virtual machines
+  - container has their own network stack just like virtual machines
+- container represents a single application, while virtual represents an fully functional OS
+- containers and hypervisors are complementing technology not competing technology
+- containers runs on top of some Operating System
+- containers shares the Hardware resources from the underlying Operating System ( Host or Guest OS )
+  
+  
 </pre>
 
 ## Info - What is Container Runtime?
