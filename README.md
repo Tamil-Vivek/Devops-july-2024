@@ -52,3 +52,4 @@ java -jar ./jenkins.war
 Then you navigate to http://localhost:8080 on your firefox web browser within the Ubuntu Lab machine
 Expected output
 ![image](https://github.com/user-attachments/assets/5ec242b2-1e0f-4ec2-8215-9b964df86094)
+![image](https://github.com/user-attachments/assets/7e0c398c-dac6-4001-8306-6f4894a3a40f)
