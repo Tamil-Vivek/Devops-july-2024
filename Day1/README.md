@@ -526,9 +526,31 @@ Expected ouput
 ![image](https://github.com/user-attachments/assets/64683c45-7fe7-44f3-b0aa-9fbe3787aff8)
 ![image](https://github.com/user-attachments/assets/e1e4d87c-bb8e-43de-af5f-ee550293005b)
 
+## Lab - Cloning TekTutor Training Repository ( one time activity )
+```
+cd ~
+git clone https://github.com/tektutor/devops-july-2024.git
+cd devops-july-2024
+ls -l
+```
+
+## Lab - Building a custom docker image - containerize your proprietary application
+```
+cd ~/devops-july-2024
+git pull
+cd Day1/spring-ms
+docker build -t tektutor/spring-ms:1.0 .
+docker images
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/adf919b1-c2aa-4251-826b-3c5f622ab724)
+![image](https://github.com/user-attachments/assets/9c84981c-98b3-4242-ad73-9e8a6a395982)
+![image](https://github.com/user-attachments/assets/80e7673b-1be3-44e4-b9f2-883df10bbc18)
 
 
 ## Request to share your Day1 feedback at the below URL
 ```
 https://survey.zohopublic.com/zs/JCDHaM
 ```
+
