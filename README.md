@@ -25,4 +25,4 @@ docker images
 </pre>
 
 Expected output
-![image](https://github.com/user-attachments/assets/daa8309e-2ed9-4929-8d49-3a859bb99a8c)
+![image](https://github.com/user-attachments/assets/a5f46444-b08f-47b2-9345-27f25bc29410)
