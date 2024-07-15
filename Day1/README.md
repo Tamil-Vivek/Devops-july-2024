@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7a4cfe0f-91a5-41e2-b111-7915485ddad9)# Day 1
+![image](https://github.com/user-attachments/assets/22156215-aa28-4e18-b8f4-85753ea5e57f)![image](https://github.com/user-attachments/assets/7a4cfe0f-91a5-41e2-b111-7915485ddad9)# Day 1
 ## Info - How many physical servers are required to support 1000 Operating System when no virtualization supported
 - 1000 Physical servers are required
 - Your organization has to procure 1000 servers
@@ -326,7 +326,7 @@ docker ps
 ```
 
 Expected output
-![image](https://github.com/user-attachments/assets/65d1b017-0bef-4e2b-b751-e1e98bcd474a)
+![image](https://github.com/user-attachments/assets/65d1b017-0bef-4e2b-b751-e1e8bcd474a)
 
 ## Lab - Finding an IP address of a running container without getting inside the container shell
 ```
@@ -341,3 +341,11 @@ Expected output
 ![image](https://github.com/user-attachments/assets/6a8ac48a-27a7-4537-826e-14fcb318e280)
 ![image](https://github.com/user-attachments/assets/93ad6446-28c6-4397-864b-1aa8268a2131)
 ![image](https://github.com/user-attachments/assets/e57338d9-64c6-4b99-b22e-13131192074d)
+
+## Lab - Extracting NetworkID of a container using inspect command
+```
+docker inspect -f {{.NetworkSettings.Networks.bridge.NetworkID}} c2  
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f10450de-1b49-4248-a4d5-ebcc3547c5fc)
