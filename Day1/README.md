@@ -349,3 +349,15 @@ docker inspect -f {{.NetworkSettings.Networks.bridge.NetworkID}} c2
 
 Expected output
 ![image](https://github.com/user-attachments/assets/f10450de-1b49-4248-a4d5-ebcc3547c5fc)
+
+## Lab - Finding more details about a docker image using inspect`
+```
+docker images
+docker image inspect mysql:latest
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/76a2a871-393a-4bd6-b8c2-732e3bdfbe69)
+![image](https://github.com/user-attachments/assets/c33767d6-2a84-4116-98f0-9f04442f8673)
+![image](https://github.com/user-attachments/assets/21282070-a916-4a97-8080-00199b13a2f7)
+![image](https://github.com/user-attachments/assets/2e9e0980-140c-44f4-91bd-f846500edc53)
