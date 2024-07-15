@@ -327,3 +327,16 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/65d1b017-0bef-4e2b-b751-e1e98bcd474a)
+
+## Lab - Finding an IP address of a running container without getting inside the container shell
+```
+docker inspect c1
+docker inspect c1 | grep IPA
+docker inspect -f {{.NetworkSettings.IPAddress}} c1
+docker inspect -f {{.NetworkSettings.IPAddress}} c2
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/94e538e6-4c08-487f-b691-003b37950e4f)
+![image](https://github.com/user-attachments/assets/93ad6446-28c6-4397-864b-1aa8268a2131)
+![image](https://github.com/user-attachments/assets/e57338d9-64c6-4b99-b22e-13131192074d)
