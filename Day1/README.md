@@ -251,3 +251,14 @@ docker ps -a
 Expected output
 ![image](https://github.com/user-attachments/assets/c26b6737-ccb7-4d8d-8e9f-9a3cebbbabcc)
 
+## Lab - Starting an existed container and getting inside its container shell
+```
+docker ps -a
+docker start c1
+docker exec -it c1 /bin/bash
+ls
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d8b95b00-ac82-46a6-9d5f-9e90389f4566)
