@@ -17,7 +17,7 @@ https://rpsconsulting116.examly.io/contest/publicU2FsdGVkX1+a0m9IouvU6KN7NAziIMb
 
 #### Pariticipants who are facing lab issues
 <pre>
-- USER 02, 11 no lab machine is mapped 
+- USER 02 no lab machine is mapped 
 </pre>
 
 Below user are not able to register pre-test with their gmail id
