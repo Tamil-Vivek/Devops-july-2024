@@ -146,3 +146,22 @@
 - Podman
 - LXC
 </pre>
+
+## Info - Container Orchestration Platforms
+- Container Orchestration Platforms helps managing your containerized application workloads
+- they manage your applications
+- they have inbuilt
+  - application monitoring features ( health check, readiness check, liveliness check )
+  - it can repair your application when it stops responding
+  - it can scale up/down your application instances when the user traffic to application increases/decreases
+  - it can help your rollout new application version without any downtime
+  - self-healing
+  - it support load-balancers
+  - it supports exposing your application to internal applications or to external world as services
+  - it supports service discovery
+  - it supports CI/CD ( Google Kubernetes & Openshift supports this )
+  - it supports serverless architecture ( Google Kubernetes & Openshift supports this )
+- Examples
+  - Docker SWARM 
+  - Google Kubernetes
+  - Red Hat Openshift
