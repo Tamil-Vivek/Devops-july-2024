@@ -298,3 +298,19 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/9cd42930-640e-4ab6-904e-3eeab79023be)
+
+## Lab - Creating a container and running it in the background mode
+```
+docker run -dit --name c2 --hostname c2 ubuntu:16.04 /bin/bash
+docker ps
+```
+
+In order to get inside the container shell
+```
+docker exec -it c2 /bin/bash
+ls -l
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a9856e9f-1241-415e-b3c8-da66529fcab7)
