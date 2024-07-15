@@ -526,9 +526,42 @@ Expected ouput
 ![image](https://github.com/user-attachments/assets/64683c45-7fe7-44f3-b0aa-9fbe3787aff8)
 ![image](https://github.com/user-attachments/assets/e1e4d87c-bb8e-43de-af5f-ee550293005b)
 
+## Lab - Cloning TekTutor Training Repository ( one time activity )
+```
+cd ~
+git clone https://github.com/tektutor/devops-july-2024.git
+cd devops-july-2024
+ls -l
+```
+
+## Lab - Building a custom docker image - containerize your proprietary application
+```
+cd ~/devops-july-2024
+git pull
+cd Day1/spring-ms
+docker build -t tektutor/spring-ms:1.0 .
+docker images
+
+docker run -d --name hello --hostname hello tektutor/spring-ms:1.0
+docker ps
+docker inspect hello | grep IPA
+curl http://172.17.0.2:8080
+
+docker run -d --name hello1 --hostname hello1 -p 8080:8080 tektutor/spring-ms:1.0
+docker ps
+curl http://localhost:8080
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/adf919b1-c2aa-4251-826b-3c5f622ab724)
+![image](https://github.com/user-attachments/assets/9c84981c-98b3-4242-ad73-9e8a6a395982)
+![image](https://github.com/user-attachments/assets/80e7673b-1be3-44e4-b9f2-883df10bbc18)
+![image](https://github.com/user-attachments/assets/8fd51df4-9fbf-4fd0-b130-db469a52caee)
+![image](https://github.com/user-attachments/assets/407f033a-4006-413e-b8bf-1395aaa1c8ec)
 
 
 ## Request to share your Day1 feedback at the below URL
 ```
 https://survey.zohopublic.com/zs/JCDHaM
 ```
+
