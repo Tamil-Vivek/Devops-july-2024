@@ -1,4 +1,4 @@
-# Day 2
+![image](https://github.com/user-attachments/assets/0f98619f-9c9a-4e14-bd1e-437340799614)# Day 2
 
 ## Lab - Cloning TekTutor Training Repository ( one time activity )
 ```
@@ -246,3 +246,13 @@ mvn site
 Expected output
 ![image](https://github.com/user-attachments/assets/a3d4bb9c-4134-4478-b3ab-fed6779ff1c9)
 ![image](https://github.com/user-attachments/assets/7068628e-d168-4578-a2fe-1001ff0f84fa)
+
+## Lab - Create a JFrog Artifactory server container with opensource docker image
+```
+docker run -d --name jfrog --hostname jfrog -p 8081:8081 -p 8082:8080 releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.5
+
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/bf2c6348-83bb-444c-b575-142a027430b6)
