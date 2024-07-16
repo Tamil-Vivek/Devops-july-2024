@@ -149,4 +149,10 @@ In case you are using latest Java features, when the compiler feature set is res
 - mvn package - will create jar/war/ear depending on the type of your project
 </pre>
 
-
+## Info - Maven Dependency Management
+<pre>
+- Our application depends on JUnit Testing Framework to perform automatted Unit and Integration Testing
+- We need to add a dependency section and give the maven-coordinated of Junit testing framework jar 
+</pre>
+![image](https://github.com/user-attachments/assets/5d8ef6ab-01e7-4124-a566-652ae3f857b8)
+![image](https://github.com/user-attachments/assets/ad09947d-3773-48d5-8326-9b945d9e90ea)
