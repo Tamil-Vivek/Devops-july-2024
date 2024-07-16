@@ -70,3 +70,14 @@
 <pre>
   
 </pre>
+
+
+## Lab - Finding maven version
+```
+mvn --version
+tree /usr/share/maven
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2b3db5bd-5a06-43a2-abb9-e0082fcac5ce)
+![image](https://github.com/user-attachments/assets/996d13ae-4cff-434d-862f-35f61a18610f)
