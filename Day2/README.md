@@ -110,5 +110,5 @@ When the maven.compiler.source and maven.compiler.target is not configured, the 
 In case you are using latest Java features, when the compiler feature set is restricted to JDK 1.5, your code may not compile.
 ![image](https://github.com/user-attachments/assets/9768ff82-d100-4c18-9f88-286680b97c6b)
 ![image](https://github.com/user-attachments/assets/d1dc4934-5b81-446d-944e-feaa1dd50594)
-
 ![image](https://github.com/user-attachments/assets/1eeb5395-9b8a-43ad-a28f-80f3954a7dff)
+![image](https://github.com/user-attachments/assets/2c2d4f32-b7a6-4293-a8e9-2c26b1c51014)
