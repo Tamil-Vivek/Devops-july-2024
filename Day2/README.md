@@ -138,3 +138,4 @@ In case you are using latest Java features, when the compiler feature set is res
     <maven-compiler-target>1.8</maven-compiler-target>
   </properties>
   ```
+![image](https://github.com/user-attachments/assets/7f5e0d81-d8f5-4e0c-a32d-3098e1dd5298)
