@@ -204,3 +204,16 @@ mvn help:describe -Dcmd=site
 
 Expected output
 ![image](https://github.com/user-attachments/assets/d57f6478-8822-4cbb-a683-a45b239685aa)
+
+## Lab - Deleting the target folder using mvn clean command
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+ls -l
+mvn clean
+ls -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8ce3e38a-654b-4a42-b20b-1fe6c86cdee7)
