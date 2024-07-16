@@ -302,4 +302,28 @@ Skip
 Finish
 ![image](https://github.com/user-attachments/assets/62e9bd16-7de7-464c-a06f-e6e9617b8bfd)
 ![image](https://github.com/user-attachments/assets/921f3438-ef8e-45b4-80d5-4bf419cd8924)
+Click on "Create Repository"
+![image](https://github.com/user-attachments/assets/e6b19745-5c2d-4d46-adf4-59e972761b45)
+Click on "Add Repository" in the top right corner and select "Local Repository"
+![image](https://github.com/user-attachments/assets/9fa564ee-8fba-492c-b256-b3d5eea39c8a)
+Select "Maven"
+![image](https://github.com/user-attachments/assets/0e22813f-e4ef-43a6-b4c3-2c4d7b778ce1)
+Type "tektutor" under the Repository Key
+![image](https://github.com/user-attachments/assets/bfd4495c-3870-49fa-b9cc-ffce01de6b40)
+![image](https://github.com/user-attachments/assets/9c89dabd-27c6-48f2-b8c1-efd3e44286e0)
+Click on "Create Local Repository"
+![image](https://github.com/user-attachments/assets/0aadd4bc-46d1-4945-8d79-4c80efc1f870)
+Close the "Add Users" dialog
+![image](https://github.com/user-attachments/assets/990b0ac0-342a-4004-9167-3b8cf2963dbf)
+On the top left corner, switch to "Application" tab
+![image](https://github.com/user-attachments/assets/89a6500f-a94b-402f-8f43-e4b29842ccc1)
+Expand Artifactory
+![image](https://github.com/user-attachments/assets/73c447eb-8812-4ac2-86f8-64a44430b6de)
+Click on "Artifacts" and select "tektutor"
+![image](https://github.com/user-attachments/assets/9fd5839b-0778-4c63-a468-db29df3ba6e1)
+Copy the url
+![image](https://github.com/user-attachments/assets/f0adc644-be81-4ad2-a0b6-12f9ddff27c3)
+<pre>
+http://172.17.0.2:8082/artifactory/tektutor/
+</pre>
 
