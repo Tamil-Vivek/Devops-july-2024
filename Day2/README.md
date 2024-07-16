@@ -219,3 +219,30 @@ ls -l
 
 Expected output
 ![image](https://github.com/user-attachments/assets/8ce3e38a-654b-4a42-b20b-1fe6c86cdee7)
+
+## Lab - Finding the list of goals a maven plugin supports
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-compiler-plugin
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-clean-plugin
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-jar-plugin
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/248c8bbd-f39e-475f-9808-78d3706cb1fa)
+![image](https://github.com/user-attachments/assets/b38aa8d1-e670-434c-9c3a-2c09d189ef52)
+
+
+## Lab - Using maven site to generate html documentation about your project
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn site
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a3d4bb9c-4134-4478-b3ab-fed6779ff1c9)
+![image](https://github.com/user-attachments/assets/7068628e-d168-4578-a2fe-1001ff0f84fa)
