@@ -249,10 +249,16 @@ Expected output
 
 ## Lab - Create a JFrog Artifactory server container with opensource docker image
 ```
-docker run -d --name jfrog --hostname jfrog -p 8081:8081 -p 8082:8080 releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.5
+docker run -d --name jfrog --hostname jfrog -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.5
 
 docker ps
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/bf2c6348-83bb-444c-b575-142a027430b6)
+
+Accessing the JFrog Artifactory server webconsole
+```
+
+```
+![image](https://github.com/user-attachments/assets/8e67f9e2-c05e-411e-a10e-8f90ce2cc840)
