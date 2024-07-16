@@ -47,7 +47,17 @@
 
 ## Info - Maven Convention over Configuration
 <pre>
-- 
+- 80-20 Principle
+- Apache foundation has done extensive study to identify the most common usecase of Maven and they made it simple
+- At the same, Maven also supports many advanced use-cases where you may not be able to follow the Maven's conventions strictly, in such cases you need to do more configurations in pom.xml and settings.xml files.
+- Maven has conventions on
+  - how to name your project
+  - how your project folder structure should look like
+  - where you must maintain your application source code 
+  - where you must maintain your application test source code
+- If we follow Maven's conventions then with less or no extra configuraiton we can manage a project 
+- In case we can't follow Maven's conventions then Maven allows us configure to help Maven follow your convention
+  
 </pre>  
 
 ## Info - Maven Alternative tools
