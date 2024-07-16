@@ -259,6 +259,9 @@ Expected output
 
 Accessing the JFrog Artifactory server webconsole
 ```
-
+docker inspect -f {{.NetworkSettings.IPAddress}} jfrog
+http://172.17.0.2:8081
 ```
+Expected output
 ![image](https://github.com/user-attachments/assets/8e67f9e2-c05e-411e-a10e-8f90ce2cc840)
+![image](https://github.com/user-attachments/assets/34246192-6853-4e85-83ae-b1bf99d907f6)
