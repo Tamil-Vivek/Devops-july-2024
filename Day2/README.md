@@ -104,4 +104,11 @@ mvn compile
 Expected output
 ![image](https://github.com/user-attachments/assets/b4491893-ebb9-495d-b0c1-0bf443cb3bd3)
 ![image](https://github.com/user-attachments/assets/a01cc59a-f1c0-468c-9458-75dda5c5a92b)
+
+When the maven.compiler.source and maven.compiler.target is not configured, the maven version we have installed uses maven-compiler-plugin:3.1 which was released in the year 2013, at that time the stable version of JDK was JDK 1.5, hence irrespective of which version of JDK you have installed on your machine, it will use the Java as v1.5 only.
+
+In case you are using latest Java features, when the compiler feature set is restricted to JDK 1.5, your code may not compile.
+![image](https://github.com/user-attachments/assets/9768ff82-d100-4c18-9f88-286680b97c6b)
+![image](https://github.com/user-attachments/assets/d1dc4934-5b81-446d-944e-feaa1dd50594)
+
 ![image](https://github.com/user-attachments/assets/1eeb5395-9b8a-43ad-a28f-80f3954a7dff)
