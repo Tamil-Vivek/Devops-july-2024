@@ -164,6 +164,8 @@ In case you are using latest Java features, when the compiler feature set is res
   - Examples
     - During the compile phase, maven-compiler-plugin's compile goal is invoked
     - During the clean phase, maven-clean-plugins's clean goal is invoked
+- Each Maven Plugin has multiple goals
+- Each Plugin goal does one activity like compiling, invoking test case, packing applicaiton jar/war/ear, etc.,
 - Maven supports 3 lifecycle
   - default ( 23 Phases )
   - clean ( 3 Phases )
