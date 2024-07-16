@@ -327,3 +327,6 @@ Copy the url
 http://172.17.0.2:8082/artifactory/tektutor/
 </pre>
 
+Open the JFrog Artifactory url in a separte web browser tab, you can observe it is empty as of now
+![image](https://github.com/user-attachments/assets/58c95bd9-6ee5-4d00-a7bf-b37e2d646f12)
+
