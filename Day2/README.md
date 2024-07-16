@@ -1,4 +1,4 @@
-# Day 2
+![image](https://github.com/user-attachments/assets/408b7744-34dc-451f-ab9c-031d6a18e4b6)# Day 2
 
 ## Info - Maven Overview
 <pre>
@@ -71,6 +71,16 @@
   
 </pre>
 
+## Info - JDK vs JRE
+<pre>
+- JDK - Java Development Kit - used by Developers in Dev environment
+  - When we install JDK we get both javac(compiler) and java(interpretter)
+  - source ( the machine where the application is compiled )
+- JRE - Java Runtime Environment - used by QA and Production environments
+  - we only get Java(interpreter) when we install JRE
+  - target( the machine where the application will be running)
+</pre>
+
 
 ## Lab - Finding maven version
 ```
@@ -81,3 +91,16 @@ tree /usr/share/maven
 Expected output
 ![image](https://github.com/user-attachments/assets/2b3db5bd-5a06-43a2-abb9-e0082fcac5ce)
 ![image](https://github.com/user-attachments/assets/996d13ae-4cff-434d-862f-35f61a18610f)
+
+## Lab - Creating a simple Core java application using Maven as a build tool
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn validate
+mvn compile
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b4491893-ebb9-495d-b0c1-0bf443cb3bd3)
+![image](https://github.com/user-attachments/assets/a01cc59a-f1c0-468c-9458-75dda5c5a92b)
