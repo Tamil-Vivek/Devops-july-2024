@@ -156,3 +156,51 @@ In case you are using latest Java features, when the compiler feature set is res
 </pre>
 ![image](https://github.com/user-attachments/assets/5d8ef6ab-01e7-4124-a566-652ae3f857b8)
 ![image](https://github.com/user-attachments/assets/ad09947d-3773-48d5-8326-9b945d9e90ea)
+
+## Info - Maven Lifecycle
+<pre>
+- Life cycle is a collection of many Phases called one after the other in a particular sequence
+- Each Maven Phase in a Lifecycle will invoke one or more Plugins goals
+  - Examples
+    - During the compile phase, maven-compiler-plugin's compile goal is invoked
+    - During the clean phase, maven-clean-plugins's clean goal is invoked
+- Maven supports 3 lifecycle
+  - default ( 23 Phases )
+  - clean ( 3 Phases )
+  - site ( 4 Phase )
+</pre>
+
+## Lab - Finding all the phases that are part of default maven life-cycle
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn help:describe -Dcmd=compile 
+```
+
+Expected ouput
+![image](https://github.com/user-attachments/assets/8db49337-bc96-4b33-93bd-7d29adce7cb2)
+![image](https://github.com/user-attachments/assets/f90a8f48-af79-45be-b07d-eb0af5d01e9d)
+
+## Lab - Finding all the phases that are part of clean maven life-cycle
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn help:describe -Dcmd=clean 
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6ae78de1-7338-4fae-a50c-202505a9a2e0)
+
+
+## Lab - Finding all the phases that are part of site maven life-cycle
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn help:describe -Dcmd=site 
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d57f6478-8822-4cbb-a683-a45b239685aa)
