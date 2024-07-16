@@ -265,3 +265,25 @@ http://172.17.0.2:8081
 Expected output
 ![image](https://github.com/user-attachments/assets/8e67f9e2-c05e-411e-a10e-8f90ce2cc840)
 ![image](https://github.com/user-attachments/assets/34246192-6853-4e85-83ae-b1bf99d907f6)
+Default JFrog Container - Login Credentials
+<pre>
+username - admin
+password - password
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/1c2f5178-92d0-48fd-9fe1-f5e912179bfe)
+![image](https://github.com/user-attachments/assets/21bc87f0-0ab3-408f-b382-91707f71ea0f)
+![image](https://github.com/user-attachments/assets/b55a0d02-4704-456f-800b-b32c9010a105)
+Change the password to "Admin@123" without quotes
+![image](https://github.com/user-attachments/assets/94bc322c-45df-4ac5-90d9-eba8a0a871b8)
+Skip
+![image](https://github.com/user-attachments/assets/f2e87b06-a748-43e2-86eb-737f48049cfc)
+Skip
+![image](https://github.com/user-attachments/assets/bbd4b6cc-d729-46e7-ad78-91d49d7f0aad)
+Skip
+![image](https://github.com/user-attachments/assets/4c7960e6-c1c6-4295-9346-04a2e0153279)
+Finish
+![image](https://github.com/user-attachments/assets/62e9bd16-7de7-464c-a06f-e6e9617b8bfd)
+![image](https://github.com/user-attachments/assets/921f3438-ef8e-45b4-80d5-4bf419cd8924)
+
