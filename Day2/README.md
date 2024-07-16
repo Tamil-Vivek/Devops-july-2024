@@ -330,3 +330,12 @@ http://172.17.0.2:8082/artifactory/tektutor/
 Open the JFrog Artifactory url in a separte web browser tab, you can observe it is empty as of now
 ![image](https://github.com/user-attachments/assets/58c95bd9-6ee5-4d00-a7bf-b37e2d646f12)
 
+Pom file must be updated as shown below
+![image](https://github.com/user-attachments/assets/552f621f-5cff-4aee-9537-ebdc4bde3617)
+
+We need to add the JFrog Server login credentials in settings.xml file under /usr/maven/share/conf/settings.xml
+![image](https://github.com/user-attachments/assets/b5bc9b92-0eba-4f33-b34a-03b9caac6c51)
+![image](https://github.com/user-attachments/assets/3c484063-8235-4284-ad87-98df54745a82)
+![image](https://github.com/user-attachments/assets/0aacf2bc-1a05-4484-a3b5-7683bd6af7ee)
+![image](https://github.com/user-attachments/assets/cb6c602f-c450-47f8-8818-c25d99ba5706)
+
