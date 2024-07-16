@@ -139,3 +139,12 @@ In case you are using latest Java features, when the compiler feature set is res
   </properties>
   ```
 ![image](https://github.com/user-attachments/assets/7f5e0d81-d8f5-4e0c-a32d-3098e1dd5298)
+
+## Info - Commonly used Maven commands
+<pre>
+- mvn compile - compiles the application source code kept under src/main/java and sub-folders
+- mvn test    - compiles the test case source code kept under src/test/java and sub-folders
+- mvn clean   - will delete the target folder where all the .class, jar/war/ear files are stored
+- mvn clean compile - will first delete the target folder and compiles the applicaiton source code
+- mvn package - will create jar/war/ear depending on the type of your project
+</pre>
