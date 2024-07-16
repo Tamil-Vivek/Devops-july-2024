@@ -131,10 +131,10 @@ In case you are using latest Java features, when the compiler feature set is res
 - depending the version of maven-compiler-plugin we are using it may a default version of JDK
 - in our case, the default maven-compiler-version happens to be 3.1 which uses JDK 1.5 and JRE 1.5 
 - hence, we have to configure the properties to instruct maven to use a specific version of JDK and JRE
+</pre>
   ```
   <properties>
     <maven-compiler-source>1.8</maven-compiler-source>
     <maven-compiler-target>1.8</maven-compiler-target>
   </properties>
   ```
-</pre>
