@@ -139,3 +139,81 @@ In case you are using latest Java features, when the compiler feature set is res
   </properties>
   ```
 ![image](https://github.com/user-attachments/assets/7f5e0d81-d8f5-4e0c-a32d-3098e1dd5298)
+
+## Info - Commonly used Maven commands
+<pre>
+- mvn compile - compiles the application source code kept under src/main/java and sub-folders
+- mvn test    - compiles the test case source code kept under src/test/java and sub-folders
+- mvn clean   - will delete the target folder where all the .class, jar/war/ear files are stored
+- mvn clean compile - will first delete the target folder and compiles the applicaiton source code
+- mvn package - will create jar/war/ear depending on the type of your project
+</pre>
+
+## Info - Maven Dependency Management
+<pre>
+- Our application depends on JUnit Testing Framework to perform automatted Unit and Integration Testing
+- We need to add a dependency section and give the maven-coordinated of Junit testing framework jar 
+</pre>
+![image](https://github.com/user-attachments/assets/5d8ef6ab-01e7-4124-a566-652ae3f857b8)
+![image](https://github.com/user-attachments/assets/ad09947d-3773-48d5-8326-9b945d9e90ea)
+
+## Info - Maven Lifecycle
+<pre>
+- Life cycle is a collection of many Phases called one after the other in a particular sequence
+- Each Maven Phase in a Lifecycle will invoke one or more Plugins goals
+  - Examples
+    - During the compile phase, maven-compiler-plugin's compile goal is invoked
+    - During the clean phase, maven-clean-plugins's clean goal is invoked
+- Maven supports 3 lifecycle
+  - default ( 23 Phases )
+  - clean ( 3 Phases )
+  - site ( 4 Phase )
+</pre>
+
+## Lab - Finding all the phases that are part of default maven life-cycle
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn help:describe -Dcmd=compile 
+```
+
+Expected ouput
+![image](https://github.com/user-attachments/assets/8db49337-bc96-4b33-93bd-7d29adce7cb2)
+![image](https://github.com/user-attachments/assets/f90a8f48-af79-45be-b07d-eb0af5d01e9d)
+
+## Lab - Finding all the phases that are part of clean maven life-cycle
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn help:describe -Dcmd=clean 
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6ae78de1-7338-4fae-a50c-202505a9a2e0)
+
+
+## Lab - Finding all the phases that are part of site maven life-cycle
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn help:describe -Dcmd=site 
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/d57f6478-8822-4cbb-a683-a45b239685aa)
+
+## Lab - Deleting the target folder using mvn clean command
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+ls -l
+mvn clean
+ls -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8ce3e38a-654b-4a42-b20b-1fe6c86cdee7)
