@@ -247,6 +247,22 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a3d4bb9c-4134-4478-b3ab-fed6779ff1c9)
 ![image](https://github.com/user-attachments/assets/7068628e-d168-4578-a2fe-1001ff0f84fa)
 
+
+## Lab - Packaging application binary as jar files
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn clean package
+cd target
+java -cp hello-1.0.0.jar org.tektutor.Hello
+```
+Expected output
+![image](https://github.com/user-attachments/assets/18948656-d168-4f2a-8ba0-40f501df1c2e)
+![image](https://github.com/user-attachments/assets/6caf8fd2-87dc-49f2-ba0d-c25749521e1d)
+![image](https://github.com/user-attachments/assets/72ecab2e-33ee-45ae-ab79-8102d4d1e3bb)
+
+
 ## Lab - Create a JFrog Artifactory server container with opensource docker image
 ```
 docker run -d --name jfrog --hostname jfrog -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.5
