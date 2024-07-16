@@ -120,3 +120,21 @@ In case you are using latest Java features, when the compiler feature set is res
 ![image](https://github.com/user-attachments/assets/d1dc4934-5b81-446d-944e-feaa1dd50594)
 ![image](https://github.com/user-attachments/assets/1eeb5395-9b8a-43ad-a28f-80f3954a7dff)
 ![image](https://github.com/user-attachments/assets/2c2d4f32-b7a6-4293-a8e9-2c26b1c51014)
+
+#### Things to note
+<pre>
+- Maven has plugins to do each and every activities
+- There are maven plugins to compile, package, test, etc.,
+- to compile java applications maven depends on a plugin called maven-compiler-plugin
+- for each maven plugin there might be several version available in the Maven Central Repository, we can configure the pom.xml to use any specific version of maven-compiler-plugin.
+- the maven-compiler-plugin will invoke the javac compiler to compile the java project
+- depending the version of maven-compiler-plugin we are using it may a default version of JDK
+- in our case, the default maven-compiler-version happens to be 3.1 which uses JDK 1.5 and JRE 1.5 
+- hence, we have to configure the properties to instruct maven to use a specific version of JDK and JRE
+  ```
+  <properties>
+    <maven-compiler-source>1.8</maven-compiler-source>
+    <maven-compiler-target>1.8</maven-compiler-target>
+  </properties>
+  ```
+</pre>
