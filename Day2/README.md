@@ -1,4 +1,4 @@
-# Day 2
+![image](https://github.com/user-attachments/assets/0f98619f-9c9a-4e14-bd1e-437340799614)# Day 2
 
 ## Lab - Cloning TekTutor Training Repository ( one time activity )
 ```
@@ -246,3 +246,112 @@ mvn site
 Expected output
 ![image](https://github.com/user-attachments/assets/a3d4bb9c-4134-4478-b3ab-fed6779ff1c9)
 ![image](https://github.com/user-attachments/assets/7068628e-d168-4578-a2fe-1001ff0f84fa)
+
+
+## Lab - Packaging application binary as jar files
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn clean package
+cd target
+java -cp hello-1.0.0.jar org.tektutor.Hello
+```
+Expected output
+![image](https://github.com/user-attachments/assets/18948656-d168-4f2a-8ba0-40f501df1c2e)
+![image](https://github.com/user-attachments/assets/6caf8fd2-87dc-49f2-ba0d-c25749521e1d)
+![image](https://github.com/user-attachments/assets/72ecab2e-33ee-45ae-ab79-8102d4d1e3bb)
+
+
+## Lab - Create a JFrog Artifactory server container with opensource docker image
+```
+docker run -d --name jfrog --hostname jfrog -p 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.5
+
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/bf2c6348-83bb-444c-b575-142a027430b6)
+
+Accessing the JFrog Artifactory server webconsole
+```
+docker inspect -f {{.NetworkSettings.IPAddress}} jfrog
+http://172.17.0.2:8081
+```
+Expected output
+![image](https://github.com/user-attachments/assets/8e67f9e2-c05e-411e-a10e-8f90ce2cc840)
+![image](https://github.com/user-attachments/assets/34246192-6853-4e85-83ae-b1bf99d907f6)
+Default JFrog Container - Login Credentials
+<pre>
+username - admin
+password - password
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/1c2f5178-92d0-48fd-9fe1-f5e912179bfe)
+![image](https://github.com/user-attachments/assets/21bc87f0-0ab3-408f-b382-91707f71ea0f)
+![image](https://github.com/user-attachments/assets/b55a0d02-4704-456f-800b-b32c9010a105)
+Change the password to "Admin@123" without quotes
+![image](https://github.com/user-attachments/assets/94bc322c-45df-4ac5-90d9-eba8a0a871b8)
+Skip
+![image](https://github.com/user-attachments/assets/f2e87b06-a748-43e2-86eb-737f48049cfc)
+Skip
+![image](https://github.com/user-attachments/assets/bbd4b6cc-d729-46e7-ad78-91d49d7f0aad)
+Skip
+![image](https://github.com/user-attachments/assets/4c7960e6-c1c6-4295-9346-04a2e0153279)
+Finish
+![image](https://github.com/user-attachments/assets/62e9bd16-7de7-464c-a06f-e6e9617b8bfd)
+![image](https://github.com/user-attachments/assets/921f3438-ef8e-45b4-80d5-4bf419cd8924)
+Click on "Create Repository"
+![image](https://github.com/user-attachments/assets/e6b19745-5c2d-4d46-adf4-59e972761b45)
+Click on "Add Repository" in the top right corner and select "Local Repository"
+![image](https://github.com/user-attachments/assets/9fa564ee-8fba-492c-b256-b3d5eea39c8a)
+Select "Maven"
+![image](https://github.com/user-attachments/assets/0e22813f-e4ef-43a6-b4c3-2c4d7b778ce1)
+Type "tektutor" under the Repository Key
+![image](https://github.com/user-attachments/assets/bfd4495c-3870-49fa-b9cc-ffce01de6b40)
+![image](https://github.com/user-attachments/assets/9c89dabd-27c6-48f2-b8c1-efd3e44286e0)
+Click on "Create Local Repository"
+![image](https://github.com/user-attachments/assets/0aadd4bc-46d1-4945-8d79-4c80efc1f870)
+Close the "Add Users" dialog
+![image](https://github.com/user-attachments/assets/990b0ac0-342a-4004-9167-3b8cf2963dbf)
+On the top left corner, switch to "Application" tab
+![image](https://github.com/user-attachments/assets/89a6500f-a94b-402f-8f43-e4b29842ccc1)
+Expand Artifactory
+![image](https://github.com/user-attachments/assets/73c447eb-8812-4ac2-86f8-64a44430b6de)
+Click on "Artifacts" and select "tektutor"
+![image](https://github.com/user-attachments/assets/9fd5839b-0778-4c63-a468-db29df3ba6e1)
+Copy the url
+![image](https://github.com/user-attachments/assets/f0adc644-be81-4ad2-a0b6-12f9ddff27c3)
+<pre>
+http://172.17.0.2:8082/artifactory/tektutor/
+</pre>
+
+Open the JFrog Artifactory url in a separte web browser tab, you can observe it is empty as of now
+![image](https://github.com/user-attachments/assets/58c95bd9-6ee5-4d00-a7bf-b37e2d646f12)
+
+Pom file must be updated as shown below
+![image](https://github.com/user-attachments/assets/552f621f-5cff-4aee-9537-ebdc4bde3617)
+
+We need to add the JFrog Server login credentials in settings.xml file under /usr/maven/share/conf/settings.xml
+![image](https://github.com/user-attachments/assets/b5bc9b92-0eba-4f33-b34a-03b9caac6c51)
+![image](https://github.com/user-attachments/assets/3c484063-8235-4284-ad87-98df54745a82)
+![image](https://github.com/user-attachments/assets/0aacf2bc-1a05-4484-a3b5-7683bd6af7ee)
+![image](https://github.com/user-attachments/assets/cb6c602f-c450-47f8-8818-c25d99ba5706)
+
+Let's deploy the hello jar file into JFrog Artifacory Maven Private Repository
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn deploy
+```
+
+Expected ouput
+![image](https://github.com/user-attachments/assets/d341bfe6-a78d-41fb-bea7-f09004cf8beb)
+![image](https://github.com/user-attachments/assets/37318d17-5099-4cd6-a8aa-432b595d8935)
+![image](https://github.com/user-attachments/assets/2751f11c-9b36-4278-a1cb-fde05b84cf5d)
+Refresh the below page
+![image](https://github.com/user-attachments/assets/6411a664-a10f-4696-8bcc-9a67cd6ce11a)
+![image](https://github.com/user-attachments/assets/42d28ae1-b8f3-4374-bd6d-ca4071e20b00)
+![image](https://github.com/user-attachments/assets/86543596-528b-40b8-91f9-c8caca81f055)
