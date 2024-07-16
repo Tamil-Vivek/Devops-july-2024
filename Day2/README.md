@@ -339,3 +339,19 @@ We need to add the JFrog Server login credentials in settings.xml file under /us
 ![image](https://github.com/user-attachments/assets/0aacf2bc-1a05-4484-a3b5-7683bd6af7ee)
 ![image](https://github.com/user-attachments/assets/cb6c602f-c450-47f8-8818-c25d99ba5706)
 
+Let's deploy the hello jar file into JFrog Artifacory Maven Private Repository
+```
+cd ~/devops-july-2024
+git pull
+cd Day2/Hello
+mvn deploy
+```
+
+Expected ouput
+![image](https://github.com/user-attachments/assets/d341bfe6-a78d-41fb-bea7-f09004cf8beb)
+![image](https://github.com/user-attachments/assets/37318d17-5099-4cd6-a8aa-432b595d8935)
+![image](https://github.com/user-attachments/assets/2751f11c-9b36-4278-a1cb-fde05b84cf5d)
+Refresh the below page
+![image](https://github.com/user-attachments/assets/6411a664-a10f-4696-8bcc-9a67cd6ce11a)
+![image](https://github.com/user-attachments/assets/42d28ae1-b8f3-4374-bd6d-ca4071e20b00)
+![image](https://github.com/user-attachments/assets/86543596-528b-40b8-91f9-c8caca81f055)
