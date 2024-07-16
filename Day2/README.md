@@ -1,4 +1,12 @@
-![image](https://github.com/user-attachments/assets/408b7744-34dc-451f-ab9c-031d6a18e4b6)# Day 2
+# Day 2
+
+## Lab - Cloning TekTutor Training Repository ( one time activity )
+```
+cd ~
+git clone https://github.com/tektutor/devops-july-2024.git
+cd devops-july-2024
+ls -l
+```
 
 ## Info - Maven Overview
 <pre>
