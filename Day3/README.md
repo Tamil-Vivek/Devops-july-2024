@@ -75,7 +75,7 @@ Expected output
 ```
 cd ~/devops-july-2024
 git pull
-cd Day3/cpp-app
+cd Day3/maven/cpp-app
 tree
 mvn clean
 ls -l
