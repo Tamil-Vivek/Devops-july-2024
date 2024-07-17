@@ -14,3 +14,19 @@
       - to package war file, maven depends on maven-war-plugin
       - to delete the target folder, maven depends on maven-clean-plugin
 </pre>
+
+## Lab - Multi module project
+<pre>
+cd ~/devops-july-2024
+git pull
+cd Day3/multi-module-project/dal
+mvn install
+cd ..
+cd bl
+mvn install
+cd ..
+cd fe
+mvn install
+cd ..
+mvn clean install
+</pre>
