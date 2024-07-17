@@ -195,7 +195,7 @@ Expected output
 cd ~/devops-july-2024
 git pull
 cd Day3/ansible/CustomAnsibleNodeContainerImages/ubuntu
-cp ~/.ssh/id_ed25519.pub authorzied_keys
+cp ~/.ssh/id_ed25519.pub authorized_keys
 docker build -t tektutor/ansible-ubuntu-node:latest .
 docker images
 ```
