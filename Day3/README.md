@@ -274,6 +274,7 @@ exit
 
 Troubleshooting below error
 ![image](https://github.com/user-attachments/assets/f03657ce-6d61-4c4d-a99c-d0e44f55e59a)
+![image](https://github.com/user-attachments/assets/0d24b4f3-d124-4ca1-bfb8-77fff15380c3)
 
 
 If all went well, you can try to do ansible ping adhoc command
@@ -288,5 +289,5 @@ ansible -i inventory all -m ping
 Expected output
 ![image](https://github.com/user-attachments/assets/c0621ae3-898c-456a-8b7c-26a340ed59df)
 ![image](https://github.com/user-attachments/assets/bbba5e70-6142-4ddd-977a-af50eeda79b5)
-
+![image](https://github.com/user-attachments/assets/6990acb8-499c-4aa5-9981-9f28c50e2722)
 
