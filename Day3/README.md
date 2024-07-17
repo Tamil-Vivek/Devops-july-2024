@@ -155,3 +155,26 @@ Expected output
     - Red Hat Licensed Product
     - developed on top of AWX
 </pre>
+
+## Ansible Inventory file
+<pre>
+- text file
+- contains connections details to ansible nodes(servers)
+- two types of inventory are there
+  1. Static Inventory - manually ansible nodes(servers) are added and removed
+  2. Dynamic Inventory - it is python script
+</pre>
+
+## Ansible ad-hoc commands
+<pre>
+- trivial commands like ping can be executed as ad-hoc commands
+- any ansible module can be invoked in commandline without writing ansible playbook for quick testing or R&D
+</pre>
+
+## Ansible Playbooks
+<pre>
+- is a YAML file
+- that follows a specific format and sections to be considered as an Ansible Playbook
+- all Ansible Playbooks are YAML file but not all YAML files are Ansible Playbook
+- Playbook invokes many Ansible modules in a particular order to automate software installation and configuration management activities
+</pre>
