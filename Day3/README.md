@@ -178,3 +178,14 @@ Expected output
 - all Ansible Playbooks are YAML file but not all YAML files are Ansible Playbook
 - Playbook invokes many Ansible modules in a particular order to automate software installation and configuration management activities
 </pre>
+
+## Lab - Creating a key-pair for rps user
+Accept all defaults( press enter key 3 times in total )
+```
+cd ~
+whoami
+ssh-keygen
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/73845b92-f8a1-4138-9b6b-a0088aaa5fe6)
