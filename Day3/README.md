@@ -226,3 +226,16 @@ exit
 Expected output
 ![image](https://github.com/user-attachments/assets/afe8f32a-e92f-4ce2-b6fc-de43da3fd33c)
 ![image](https://github.com/user-attachments/assets/987883cd-f2ad-4e45-9304-14e764ca3a89)
+
+
+## Lab - Ansible ping adhoc command
+```
+cd ~/devops-july-2024
+git pull
+cd Day3/ansible/static-inventory
+cat inventory
+ansible -i inventory all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/4d812790-1be0-4c21-a9cc-d299e6df7153)
