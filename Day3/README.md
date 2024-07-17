@@ -204,3 +204,25 @@ Expected output
 ![image](https://github.com/user-attachments/assets/1c197f33-e3dc-450c-b099-ceca239450e3)
 ![image](https://github.com/user-attachments/assets/58c44e6e-f88d-43eb-bd1c-cfdc0ba18639)
 ![image](https://github.com/user-attachments/assets/a0f3cde8-c8c8-466a-a85c-6ff815cad229)
+
+## Lab - Creating ubuntu container using our custom docker image
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 8001:80 -p 2001:22 tektutor/ansible-ubuntu-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 8002:80 -p 2002:22 tektutor/ansible-ubuntu-node:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7b70e213-dea7-4ee0-97db-101170d87ded)
+
+Let's test if we are able ssh into the ubuntu1 and ubuntu2 containers
+```
+ssh -p 2001 root@localhost
+exit
+ssh -p 2002 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/afe8f32a-e92f-4ce2-b6fc-de43da3fd33c)
+![image](https://github.com/user-attachments/assets/987883cd-f2ad-4e45-9304-14e764ca3a89)
