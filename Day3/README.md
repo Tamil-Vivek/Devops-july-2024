@@ -108,3 +108,50 @@ Expected output
 ![image](https://github.com/user-attachments/assets/8ca95cd2-5259-4f52-9be4-9ea80ce6aadd)
 ![image](https://github.com/user-attachments/assets/fb80c6db-1955-4ed4-8b18-4fe19a8d8de0)
 ![image](https://github.com/user-attachments/assets/f6efe529-f7b8-4c18-87ba-e44f0e5a196f)
+
+
+## Info - Infrastructure as a Code Tool Overview
+<pre>
+- Let's one of the Dev team has approched me to install RHEL 9.2 in a Virtual machine
+- is used to provision Virtual Machine, Physical machine with Operating System, Storage, etc
+- Examples
+  - Cloudformation which is used in AWS Infrastructure automation
+  - Terraform is cloud newtral infrastructure as a code tool
+    - is used to automate infrastructure in any public cloud AWS, Azure, GCP, Digital Ocean
+    - can also be used to provision VMs in onPrem environment
+</pre>  
+
+## Info - Configuration Management Overview
+<pre>
+- If you already a machine with Operating System installed in it, you can use Configuration Management tools to further install softwares, configure the software, create users, provide permissions, deny certain permissions to certain user, manage network, etc.,
+- Examples
+  - Puppet
+    - DSL ( Domain Specific Language - the language in which the automation script is written )
+    - DSL used is Puppet's proprietary language
+  - Chef
+    - DSL used is Ruby
+  - Ansible
+    - DSL used is YAML ( Yet Another Markup Language - superset of JSON )
+</pre>
+
+## Ansible Overview
+<pre>
+- is a configuration management tool
+- developed in Python by Michael Deehan along with Opensource contributors
+- Michael Deehan was former employee of Red Hat, who was developing a similar configuration tool at Red Hat, at some point Red Hat had decommissioned the project, hence Michael Deehan had quit Red Hat and started a company called Ansible Inc
+- can be installed only in Linux
+- the machine where Ansible is installed is called Ansible Controller Machine (ACM)
+- the machines managed by Ansible is called Ansible Nodes
+- Ansible comes in 3 flavours
+  - Ansible Core 
+    - Command line only
+    - opensource
+  - AWX
+    - Ansible Tower opensource
+    - developed on top of Ansible core opensource tool
+    - supports webconsole
+  - Ansible Tower
+    - support Webconsole 
+    - Red Hat Licensed Product
+    - developed on top of AWX
+</pre>
