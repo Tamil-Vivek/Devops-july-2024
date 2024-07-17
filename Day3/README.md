@@ -40,6 +40,18 @@ Expected output
 ![image](https://github.com/user-attachments/assets/2c65a29f-3297-4b7a-b752-e650982905e4)
 ![image](https://github.com/user-attachments/assets/ea4b3b60-cb4b-4e24-a9f8-f5958e33ad87)
 
+## Lab - Finding the exec-maven-plugin goals
+```
+cd ~/devops-july-2024
+git pull
+cd Day3/cpp-app
+mvn help:describe -Dplugin=org.codehaus.mojo:exec-maven-plugin
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/98531fae-aefd-447d-977d-24336b3cf92b)
+
+
 ## Lab - Building c++ applicaiton using maven build tool
 ```
 cd ~/devops-july-2024
