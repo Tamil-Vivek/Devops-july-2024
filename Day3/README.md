@@ -39,3 +39,33 @@ Expected output
 ![image](https://github.com/user-attachments/assets/c1d64cdb-e1fc-4877-8d2e-1d70f24498d5)
 ![image](https://github.com/user-attachments/assets/2c65a29f-3297-4b7a-b752-e650982905e4)
 ![image](https://github.com/user-attachments/assets/ea4b3b60-cb4b-4e24-a9f8-f5958e33ad87)
+
+## Lab - Building c++ applicaiton using maven build tool
+```
+cd ~/devops-july-2024
+git pull
+cd Day3/cpp-app
+mvn compile
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/75c6d827-e5b1-4d37-807d-4140832ea0db)
+![image](https://github.com/user-attachments/assets/202246a1-a96e-46d1-9e21-c80c69fefc3d)
+![image](https://github.com/user-attachments/assets/8f40997a-022e-49cd-98f3-5c83a16e12ac)
+![image](https://github.com/user-attachments/assets/89608c65-ba6e-4f7e-b806-d7c4c0a2962f)
+
+```
+cd ~/devops-july-2024
+git pull
+cd Day3/cpp-app
+tree
+mvn clean
+ls -l
+
+mvn clean compile
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3be68993-82b6-45fb-aeaf-53e7d1072d70)
+![image](https://github.com/user-attachments/assets/358c2512-7740-478a-bddb-096e05f64abd)
+![image](https://github.com/user-attachments/assets/91f21d24-48ce-4b47-98e5-ffc5dbb62451)
