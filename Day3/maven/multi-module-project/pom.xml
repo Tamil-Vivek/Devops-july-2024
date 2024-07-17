@@ -2,14 +2,21 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.tektutor</groupId>
-	<artifactId>hello</artifactId>
+	<artifactId>crm</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
+	<modules>
+		<module>fe</module>
+		<module>bl</module>
+		<module>dal</module>
+		<module>main</module>
+	</modules>
 
 	<dependencies>
 		<dependency>
@@ -19,11 +26,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<distributionManagement>
-		<repository>
-			<id>jfrog</id>
-			<url>http://172.17.0.2:8082/artifactory/tektutor/</url>
-		</repository>
-	</distributionManagement>
 </project>
