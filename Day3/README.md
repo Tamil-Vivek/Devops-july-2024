@@ -239,3 +239,54 @@ ansible -i inventory all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/4d812790-1be0-4c21-a9cc-d299e6df7153)
+
+As the latest version of ansible seems to expecte Python 3.6 to installed, let's upgrade the ubuntu we use in Dockerfile and redo the all the procedures to rebuild the image
+
+Let's delete the ubuntu1 and ubuntu2 containers
+```
+docker rm -f ubuntu1 ubuntu2
+docker ps -a
+```
+
+Let's rebuild the image with Ubuntu latest image as base image
+```
+cd ~/devops-july-2024
+git pull
+cd Day3/ansible/CustomAnsibleNodeContainerImages/ubuntu
+docker build -t tektutor/ansible-ubuntu-node:latest .
+docker images
+```
+
+Let's recreate the ubuntu1 and ubuntu2
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ansible-ubuntu-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ansible-ubuntu-node:latest
+docker ps
+```
+
+Check if you are able to ssh into ubuntu1 and ubuntu2
+```
+ssh -p 2001 root@localhost
+exit
+ssh -p 2002 root@locahost
+exit
+```
+
+Troubleshooting below error
+![image](https://github.com/user-attachments/assets/f03657ce-6d61-4c4d-a99c-d0e44f55e59a)
+
+
+If all went well, you can try to do ansible ping adhoc command
+```
+cd ~/devops-july-2024
+git pull
+cd Day3/ansible/static-inventory
+cat inventory
+ansible -i inventory all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c0621ae3-898c-456a-8b7c-26a340ed59df)
+![image](https://github.com/user-attachments/assets/bbba5e70-6142-4ddd-977a-af50eeda79b5)
+
+
