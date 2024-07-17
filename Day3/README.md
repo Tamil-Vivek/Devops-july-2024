@@ -52,7 +52,13 @@ Expected output
 ![image](https://github.com/user-attachments/assets/98531fae-aefd-447d-977d-24336b3cf92b)
 
 
-## Lab - Building c++ applicaiton using maven build tool
+## Lab - Building c++ application using maven build tool
+You need to install c++, make and dependent tools before proceeding
+```
+sudo apt install -y build-essential
+```
+
+Once the above tools are installed, you may proceed
 ```
 cd ~/devops-july-2024
 git pull
@@ -69,7 +75,7 @@ Expected output
 ```
 cd ~/devops-july-2024
 git pull
-cd Day3/cpp-app
+cd Day3/maven/cpp-app
 tree
 mvn clean
 ls -l
