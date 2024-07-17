@@ -189,3 +189,18 @@ ssh-keygen
 
 Expected output
 ![image](https://github.com/user-attachments/assets/73845b92-f8a1-4138-9b6b-a0088aaa5fe6)
+
+## Lab - Building a Custom Ansible Ubuntu Node
+```
+cd ~/devops-july-2024
+git pull
+cd Day3/ansible/ubuntu
+cp /home/jegan/.ssh/id_ed25519.pub authorzied_keys
+docker build -t tektutor/ansible-ubuntu-node:latest .
+docker images
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/1c197f33-e3dc-450c-b099-ceca239450e3)
+![image](https://github.com/user-attachments/assets/58c44e6e-f88d-43eb-bd1c-cfdc0ba18639)
+![image](https://github.com/user-attachments/assets/a0f3cde8-c8c8-466a-a85c-6ff815cad229)
