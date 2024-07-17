@@ -19,7 +19,7 @@
 <pre>
 cd ~/devops-july-2024
 git pull
-cd Day3/multi-module-project/dal
+cd Day3/maven/multi-module-project/dal
 mvn install
 cd ..
 cd bl
