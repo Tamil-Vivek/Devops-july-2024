@@ -142,6 +142,32 @@ ansible-playbook -i hosts install-nginx-playbook.yml --ask-become-pass
 Expected output
 ![image](https://github.com/user-attachments/assets/c9364b4c-a754-42f6-884f-c7faf747aee3)
 
+## Demo - Ansible ping a windows virtual machine from Azure portal
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible/windows
+cat hosts
+ansible -i hosts windows -m win_ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/fdc4f552-1917-4c30-af72-477026d59bd8)
+
+## Lab - Downloading jar from JFrog Artifactory
+Make sure your JFrog Artifactory container is running and it has the jar file we are downloading.
+
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cat download-jar-from-jfrog-artifactory-playbook.yml
+ls -l
+ansible-playbook download-jar-from-jfrog-artifactory-playbook.yml
+ls -l
+```
+Expected output
+![image](https://github.com/user-attachments/assets/d521b1fb-dd46-4c84-a608-2d4fc8c2bc03)
 
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
