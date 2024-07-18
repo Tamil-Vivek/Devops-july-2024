@@ -1,4 +1,4 @@
-# Day 4
+![image](https://github.com/user-attachments/assets/8f02fbef-7350-49ff-884b-5b020b232cbe)# Day 4
 
 ## Info - Ansible Playbook Structure
 ![ansible](playbook.png)
@@ -55,6 +55,30 @@ ansible-playbook -i hosts multiple-play-in-a-playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/1d925634-e21e-4261-b754-3962ba407725)
 
+## Lab - Understanding Ansible Setup module
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+ansible -i hosts ubuntu1 -m setup
+```
+Expected output
+![image](https://github.com/user-attachments/assets/4c07d501-92af-404b-80ea-05f4b70fa54b)
+
+#### Things to note
+<pre>
+- ansible setup module will be the default module which will be executed in every Playbook
+- the setup module will retrieve many details about the ansible node
+- just to give an idea
+  - setup module collects details like
+    - hostname of the ansible node
+    - Operating System details
+    - System Hardware details
+    - Operating System Family
+    - OS version
+    - Python version installed on the node
+    - Package Manager supported on the node
+</pre>  
 
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
