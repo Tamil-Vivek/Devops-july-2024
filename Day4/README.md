@@ -111,6 +111,8 @@ ansible-playbook -i hosts install-nginx-playbook.yml
 
 Expected output
 ![image](https://github.com/user-attachments/assets/dd6485ed-1629-45e2-b0e0-578fead02732)
+![image](https://github.com/user-attachments/assets/771f4bbf-c17c-4cfa-8a6b-aa99f204484e)
+![image](https://github.com/user-attachments/assets/41cd63f7-d2b1-4b2f-a9db-b19cc405b10d)
 
 #### Things to note
 <pre>
