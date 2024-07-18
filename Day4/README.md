@@ -130,6 +130,19 @@ Expected output
 - shell module isn't idempotent, hence must be used only if no other option is available/possible
 </pre>  
 
+Running the playbook with multiple play, the first play will install curl on your local machine
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cat install-nginx-playbook.yml
+ansible-playbook -i hosts install-nginx-playbook.yml --ask-become-pass
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c9364b4c-a754-42f6-884f-c7faf747aee3)
+
+
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
 - is an inspect and adapt meeting
