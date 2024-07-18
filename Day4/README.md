@@ -316,4 +316,8 @@ Click on "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/0a3ab8cf-eaad-465d-8f73-4a82e9d6d508)
 ![image](https://github.com/user-attachments/assets/73b16011-1186-4784-9ff8-64634623b1c5)
 ![image](https://github.com/user-attachments/assets/8471af7d-17e4-474d-87de-d81a8c1d7583)
-
+Click on "Manage Jenkins"
+![image](https://github.com/user-attachments/assets/6d890cd7-f23b-4f28-9a49-d4f60e9035c9)
+Click on "Tools"
+![image](https://github.com/user-attachments/assets/6f363bc3-dd1b-4330-81b1-f3e0694145ca)
+Under "JDK Installation", select "Add JDK"
