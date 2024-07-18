@@ -169,6 +169,18 @@ ls -l
 Expected output
 ![image](https://github.com/user-attachments/assets/d521b1fb-dd46-4c84-a608-2d4fc8c2bc03)
 
+## Lab - Passing arguments to ansible-playbook from command line
+```
+ansible-playbook passing-arguments-to-playbook-from-cli-playbook.yml -e greeting_msg=Hello
+
+export GREETING_MSG="Hello!"
+ansible-playbook passing-arguments-to-playbook-from-cli-playbook.yml -e greeting_msg=$GREETING_MSG
+```
+Expected output
+![image](https://github.com/user-attachments/assets/dd0f2083-8df9-4370-9f8d-a6ab277dcf0f)
+![image](https://github.com/user-attachments/assets/7247759f-9108-49fb-b979-80e0cea1a649)
+
+
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
 - is an inspect and adapt meeting
