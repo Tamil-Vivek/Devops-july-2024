@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8f02fbef-7350-49ff-884b-5b020b232cbe)# Day 4
+# Day 4
 
 ## Info - Ansible Playbook Structure
 ![ansible](playbook.png)
@@ -151,3 +151,4 @@ Expected output
 - the Customer will verify the functionality and if the customer found the application is working as expected and found to be stable, they can decide if they can make it live in production environment
 </pre>
 
+![image](https://github.com/user-attachments/assets/8f02fbef-7350-49ff-884b-5b020b232cbe)
