@@ -80,6 +80,18 @@ Expected output
     - Package Manager supported on the node
 </pre>  
 
+## Lab - Install nginx in Ansible nodes using Ansible playbook
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cat install-nginx-playbook.yml
+ansible-playbook -i hosts install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/dd6485ed-1629-45e2-b0e0-578fead02732)
+
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
 - is an inspect and adapt meeting
