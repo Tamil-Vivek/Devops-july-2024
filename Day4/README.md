@@ -321,3 +321,24 @@ Click on "Manage Jenkins"
 Click on "Tools"
 ![image](https://github.com/user-attachments/assets/6f363bc3-dd1b-4330-81b1-f3e0694145ca)
 Under "JDK Installation", select "Add JDK"
+![image](https://github.com/user-attachments/assets/bf10e147-60a1-4b69-80b7-e3319593ec09)
+
+Go to your Linux Terminal and type "mvn --version", copy the Java home and return back to Jenkins browser tab
+![image](https://github.com/user-attachments/assets/80c5a758-a1b9-4635-a88b-a21381854247)
+Paste the JDK path your copied from mvn terminal into the JDK_PATH in the Jenkins page
+![image](https://github.com/user-attachments/assets/d8c89c15-ffcc-4e3e-b7cb-fcdb7228aad0)
+![image](https://github.com/user-attachments/assets/cddeecfb-3bef-4667-bddf-3b3c5401814d)
+Scroll to the bottom and you will see "Maven Installations"
+![image](https://github.com/user-attachments/assets/e7cda284-deba-4ccb-af37-56b62d03aad6)
+Click on "Add Maven"
+![image](https://github.com/user-attachments/assets/1603b8ff-32c2-46df-9e48-369bdcd04cef)
+Under Name, you can type MAVEN387 to indicate maven 3.8.7 or given an appropriate string as per your maven version.
+Uncheck, "Install automatically"
+![image](https://github.com/user-attachments/assets/75da5740-6f3b-497f-b111-7ec82e6f9e2f)
+
+Go to terminal, copy the Maven home
+![image](https://github.com/user-attachments/assets/5d215586-732b-4a05-b525-235912632655)
+Return back to your Jenkins configuration page and paste the Maven Path as shown below
+![image](https://github.com/user-attachments/assets/ae33da72-f101-4b5d-b4ce-39029a709608)
+
+Click "Save" button
