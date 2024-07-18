@@ -300,4 +300,10 @@ Expected output
 ![image](https://github.com/user-attachments/assets/8f1413aa-66f9-486f-b45e-bb32122c0b57)
 ![image](https://github.com/user-attachments/assets/862429b9-e91d-4467-8b1c-5f088c621b9f)
 ![image](https://github.com/user-attachments/assets/dd81048c-1005-4f35-a43e-76fd3af2c56f)
+![image](https://github.com/user-attachments/assets/8e9cbcca-bde3-49b7-8d0d-b81185f99d22)
+![image](https://github.com/user-attachments/assets/c43285d2-e1f6-424b-92ae-7baafd04ea6d)
+![image](https://github.com/user-attachments/assets/6adb9cb1-81b6-4a3b-b56c-c6d5fa22e78b)
+Select "Install Suggested Plugins"
+![image](https://github.com/user-attachments/assets/2e232d54-89ca-4fe5-b381-e62580f47da7)
+![image](https://github.com/user-attachments/assets/3044f036-5390-440d-99bb-8ba787824bf6)
 
