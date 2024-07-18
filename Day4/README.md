@@ -53,6 +53,8 @@ cat multiple-play-in-a-playbook.yml
 ansible-playbook -i hosts multiple-play-in-a-playbook.yml
 ```
 Expected output
+![image](https://github.com/user-attachments/assets/1d925634-e21e-4261-b754-3962ba407725)
+
 
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
