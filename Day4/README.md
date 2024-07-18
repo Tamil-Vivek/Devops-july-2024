@@ -3,6 +3,10 @@
 ## Info - Ansible Idempotency property
 <pre>
 - Idempotency is a feature of all Configuration Management tools including Ansible
+- Majority of the ansible modules support idempotency but not all of them
+  - For example
+    - copy, service, apt, yum modules supports idempotency
+    - shell modules doesn't idempotency
 - Ansible color status
   - Green - Success with no change
   - Yellow - Success with change
