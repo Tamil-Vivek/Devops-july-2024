@@ -116,7 +116,7 @@ Expected output
 
 #### Things to note
 <pre>
-- ansible apt module is idempotent, hence only the first time it will install latest version of nginx, subsequent times we execute the playbook, ansible will report in green color(meaning - success no change)
+- ansible apt module is idempotent, hence only the first time it will install latest version of nginx, subsequent times we execute the playbook, ansible will report in green color(meaning - it won't reinstall i.e ansible will report - success with no change)
 - shell module isn't idempotent, hence must be used only if no other option is available/possible
 </pre>  
 
