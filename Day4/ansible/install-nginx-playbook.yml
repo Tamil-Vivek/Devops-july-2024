@@ -1,5 +1,18 @@
+- name: This play will install curl utility on your RPS Ubuntu cloud machine
+  hosts: localhost
+  vars_files:
+  - local-machine-credentials.yml
+  tasks:
+  - name: Install curl
+    apt: name=curl state=latest update_cache=yes
+    become: yes
+    
 - name: This playbook will install nginx, configure web root folder and deploys custom web page
   hosts: all
+  vars:
+    - provisioner_tool: Docker 
+    - conf_mgnt_tool: Ansible
+    - greeting_msg: "Welcome to DevOps!"
   tasks:
   - name: Install nginx in Ubuntu nodes
     apt: name=nginx state=latest update_cache=yes
@@ -9,3 +22,38 @@
 
   - name: Start the nginx service
     service: name=nginx state=started
+
+  - name: Create our custom web root folder
+    file: path=/var/html mode=0755 state=directory
+
+  - name: Configure the nginx server to pick the web page from our custom folder
+    copy: src=default dest=/etc/nginx/sites-available/default
+
+  - name: Restart nginx web server to apply config changes done
+    service: name=nginx state=restarted
+
+  - name: Retrieve IP address of the ansible node
+    shell: hostname -i
+    register: ip_address
+
+  - debug: var=ip_address
+
+  - name: Deploy custom web page
+    #copy: src=index.html dest=/var/html/index.html
+    template: src=index.html.j2 dest=/var/html/index.html
+
+- name: Let's test if nginx is up and running on the ansible nodes
+  hosts: localhost
+  tasks:
+  - name: Check if we are able to access web page from ubuntu1 ansible node
+    shell: curl localhost:8001
+    register: output
+
+  - debug: var=output
+
+  - name: Check if we are able to access web page from ubuntu2 ansible node
+    shell: curl localhost:8002
+    register: output
+
+  - debug: var=output
+

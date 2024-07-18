@@ -1,0 +1,8 @@
+[windows]
+4.186.56.29
+
+[windows:vars]
+ansible_connection=winrm
+ansible_user=jegan
+ansible_password=Admin@1234567
+ansible_winrm_server_cert_validation=ignore

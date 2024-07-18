@@ -1,0 +1,4 @@
+- name: Demonstrates using command line extra arguments in playbook
+  hosts: localhost
+  tasks:
+  - debug: var=greeting_msg
