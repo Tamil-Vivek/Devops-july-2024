@@ -101,6 +101,12 @@ Expected output
 </pre>  
 
 ## Lab - Install nginx in Ansible nodes using Ansible playbook
+Install curl utility locally
+```
+sudo apt install -y curl
+```
+
+Now you may proceed with the below exercise
 ```
 cd ~/devops-july-2024
 git pull
