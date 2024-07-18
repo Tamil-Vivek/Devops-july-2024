@@ -181,11 +181,13 @@ Expected output
 ![image](https://github.com/user-attachments/assets/7247759f-9108-49fb-b979-80e0cea1a649)
 
 ## Lab - Using template module in playbooks
+Create a file /home/rps/.my-vault-password with gedit and type 'root' without quotes and save the file.
+
 ```
 cd ~/devops-july-2024
 git pull
 cd Day4/ansible
-ansible-playbook install-nginx-playbook.yml --ask-vault-pass
+ansible-playbook install-nginx-playbook.yml
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/7e7ef51e-26c4-40bd-b33e-736301fc91e4)
