@@ -284,6 +284,11 @@ Expected output
 - CircleCI
 </pre>
 
+## Info - Just in case you need to reset Jenkins Administrator password
+<pre>
+https://www.jenkins.io/doc/book/system-administration/admin-password-reset-instructions/  
+</pre>
+
 ## Lab - Launching Jenkins from terminal
 Verify if already any application is using the port 8080
 ```
