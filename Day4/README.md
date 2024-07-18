@@ -29,7 +29,17 @@ Exptected output
 ![image](https://github.com/user-attachments/assets/166dca72-a411-4e0c-a62b-606fbc7b362b)
 ![image](https://github.com/user-attachments/assets/8705822f-61c8-4f91-b6f4-7ff28f688c75)
 
+## Lab - Running your first ansible playbook
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cat ping-playbook.yml
+ansible-playbook -i hosts ping-playbook.yml
+```
 
+Expected output
+![image](https://github.com/user-attachments/assets/4b611bbf-eed8-48d6-b425-6db167ff3fad)
 
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
