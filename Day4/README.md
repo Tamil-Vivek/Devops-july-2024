@@ -101,24 +101,103 @@ Expected output
 </pre>  
 
 ## Lab - Install nginx in Ansible nodes using Ansible playbook
+Install curl utility locally
+```
+sudo apt install -y curl
+```
+
+Now you may proceed with the below exercise
 ```
 cd ~/devops-july-2024
 git pull
 cd Day4/ansible
 cat install-nginx-playbook.yml
 ansible-playbook -i hosts install-nginx-playbook.yml
+curl http://localhost:8001
+curl http://localhost:8002
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/dd6485ed-1629-45e2-b0e0-578fead02732)
 ![image](https://github.com/user-attachments/assets/771f4bbf-c17c-4cfa-8a6b-aa99f204484e)
 ![image](https://github.com/user-attachments/assets/41cd63f7-d2b1-4b2f-a9db-b19cc405b10d)
+![image](https://github.com/user-attachments/assets/b54e92d1-78ae-4291-ac88-71be942b3ff6)
+![image](https://github.com/user-attachments/assets/7f0e1d24-6105-45d3-8272-633f2c71fada)
 
 #### Things to note
 <pre>
-- ansible apt module is idempotent, hence only the first time it will install latest version of nginx, subsequent times we execute the playbook, ansible will report in green color(meaning - success no change)
+- ansible apt module is idempotent, hence only the first time it will install latest version of nginx, subsequent times we execute the playbook, ansible will report in green color(meaning - it won't reinstall i.e ansible will report - success with no change)
 - shell module isn't idempotent, hence must be used only if no other option is available/possible
 </pre>  
+
+Running the playbook with multiple play, the first play will install curl on your local machine
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cat install-nginx-playbook.yml
+ansible-playbook -i hosts install-nginx-playbook.yml --ask-become-pass
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c9364b4c-a754-42f6-884f-c7faf747aee3)
+
+## Demo - Ansible ping a windows virtual machine from Azure portal
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible/windows
+cat hosts
+ansible -i hosts windows -m win_ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/fdc4f552-1917-4c30-af72-477026d59bd8)
+
+## Lab - Downloading jar from JFrog Artifactory
+Make sure your JFrog Artifactory container is running and it has the jar file we are downloading.
+
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cat download-jar-from-jfrog-artifactory-playbook.yml
+ls -l
+ansible-playbook download-jar-from-jfrog-artifactory-playbook.yml
+ls -l
+```
+Expected output
+![image](https://github.com/user-attachments/assets/d521b1fb-dd46-4c84-a608-2d4fc8c2bc03)
+
+## Lab - Passing arguments to ansible-playbook from command line
+```
+ansible-playbook passing-arguments-to-playbook-from-cli-playbook.yml -e greeting_msg=Hello
+
+export GREETING_MSG="Hello!"
+ansible-playbook passing-arguments-to-playbook-from-cli-playbook.yml -e greeting_msg=$GREETING_MSG
+```
+Expected output
+![image](https://github.com/user-attachments/assets/dd0f2083-8df9-4370-9f8d-a6ab277dcf0f)
+![image](https://github.com/user-attachments/assets/7247759f-9108-49fb-b979-80e0cea1a649)
+
+## Lab - Using template module in playbooks
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+ansible-playbook install-nginx-playbook.yml --ask-vault-pass
+```
+Expected output
+![image](https://github.com/user-attachments/assets/7e7ef51e-26c4-40bd-b33e-736301fc91e4)
+
+![image](https://github.com/user-attachments/assets/5d52d09a-18f6-4c99-a1c5-4b0cca700673)
+![image](https://github.com/user-attachments/assets/cf819212-e275-4f90-bdcc-cde07ecfea9f)
+![image](https://github.com/user-attachments/assets/638660e2-7671-4d41-98ce-b230a2d38f03)
+![image](https://github.com/user-attachments/assets/c7d2f04c-14ea-4c47-8122-cc97aed2d370)
+![image](https://github.com/user-attachments/assets/2c30f23f-a5ed-4927-8a8f-9cc6ef920eb3)
+![image](https://github.com/user-attachments/assets/eacff1b9-a41a-49fd-badd-1e55cafec46f)
+
+
 
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
