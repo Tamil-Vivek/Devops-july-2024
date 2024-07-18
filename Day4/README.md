@@ -1,4 +1,23 @@
-![image](https://github.com/user-attachments/assets/8f02fbef-7350-49ff-884b-5b020b232cbe)# Day 4
+# Day 4
+
+## Info - Ansible Idempotency property
+<pre>
+- Idempotency is a feature of all Configuration Management tools including Ansible
+- Majority of the ansible modules support idempotency but not all of them
+  - For example
+    - copy, service, apt, yum modules supports idempotency
+    - shell modules doesn't idempotency
+- Ansible color status
+  - Green - Success with no change
+  - Yellow - Success with change
+- Example
+  - when we install nginx web server in an Ubuntu Virtual machine via Ansible Playbook
+  - ansible will check if already the Virtual machine has latest version of nginx installed, in case it found that the machine already has latest version then ansible do will nothing, it will simply report the task was successful executed and it didn't change anything on the machine( it will report in green color )
+  - if suppose ansible found that the virtual machine has an older version of nginx, then ansible will upgrade the nginx to latest
+  - if suppose ansible found that the virtual machine has no nginx then, it will install the latest version of nginx
+  - once ansible has installed latest nginx when we execute the playbook it will simply report the status in green i.e it won't repeat the installation 
+  - this property is called Idempotency, we don't need to anything for this, ansible does this automatically
+</pre>
 
 ## Info - Ansible Playbook Structure
 ![ansible](playbook.png)
@@ -64,6 +83,7 @@ ansible -i hosts ubuntu1 -m setup
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/4c07d501-92af-404b-80ea-05f4b70fa54b)
+![image](https://github.com/user-attachments/assets/8f02fbef-7350-49ff-884b-5b020b232cbe)
 
 #### Things to note
 <pre>
@@ -91,6 +111,14 @@ ansible-playbook -i hosts install-nginx-playbook.yml
 
 Expected output
 ![image](https://github.com/user-attachments/assets/dd6485ed-1629-45e2-b0e0-578fead02732)
+![image](https://github.com/user-attachments/assets/771f4bbf-c17c-4cfa-8a6b-aa99f204484e)
+![image](https://github.com/user-attachments/assets/41cd63f7-d2b1-4b2f-a9db-b19cc405b10d)
+
+#### Things to note
+<pre>
+- ansible apt module is idempotent, hence only the first time it will install latest version of nginx, subsequent times we execute the playbook, ansible will report in green color(meaning - success no change)
+- shell module isn't idempotent, hence must be used only if no other option is available/possible
+</pre>  
 
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
