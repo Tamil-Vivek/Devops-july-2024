@@ -112,6 +112,12 @@ ansible-playbook -i hosts install-nginx-playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/dd6485ed-1629-45e2-b0e0-578fead02732)
 
+#### Things to note
+<pre>
+- ansible apt module is idempotent, hence only the first time it will install latest version of nginx, subsequent times we execute the playbook, ansible will report in green color(meaning - success no change)
+- shell module isn't idempotent, hence must be used only if no other option is available/possible
+</pre>  
+
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
 - is an inspect and adapt meeting
