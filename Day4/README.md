@@ -1,5 +1,36 @@
 # Day 4
 
+## Lab - Listing all the modules ansible supports
+```
+ansible-doc -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/27432e05-4042-4c21-a6d3-7c8033f1c0bc)
+
+## Lab - Finding syntax details of a particular ansible module
+```
+ansible-doc service
+ansible-doc shell
+ansible-doc yum
+ansible-doc apt
+ansible-doc file
+ansible-doc template
+ansible-doc copy
+ansible-doc command
+```
+Exptected output
+![image](https://github.com/user-attachments/assets/e01e5807-75d9-4c23-8468-0fbe3eebb0e4)
+![image](https://github.com/user-attachments/assets/d62df8c0-8bae-4471-b0eb-51351464596a)
+![image](https://github.com/user-attachments/assets/dad48ce4-8591-47b7-a95a-6f39039ee3af)
+![image](https://github.com/user-attachments/assets/161589df-6c0e-4874-904c-33ccf0419979)
+![image](https://github.com/user-attachments/assets/6347b35d-d562-4cd3-a96a-039777eefdba)
+![image](https://github.com/user-attachments/assets/2bcbcef7-91e4-4b1e-9f58-b29bd8bab5f9)
+![image](https://github.com/user-attachments/assets/166dca72-a411-4e0c-a62b-606fbc7b362b)
+![image](https://github.com/user-attachments/assets/8705822f-61c8-4f91-b6f4-7ff28f688c75)
+
+
+
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
 - is an inspect and adapt meeting
