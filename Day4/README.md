@@ -260,3 +260,26 @@ Expected output
 - the Customer will verify the functionality and if the customer found the application is working as expected and found to be stable, they can decide if they can make it live in production environment
 </pre>
 
+## Info - Jenkins Overview
+<pre>
+- Jenkins is a Continuous Integration Build Server
+- it was developed in Java by Kohsuke Kawaguchi while he was working for Sun Microsystems
+- the initial product developed was called Hudson
+- it is an opensource tool
+- Before leaving Oracle, Kohsuke Kawaguchi created a branch of Hudson source code called Jenkins
+- Kohsuke founded a company called Cloudbees 
+- Today Hudson and Jenkins shares lot of common code, but Jenkins has become very popular than Hudson
+- Jenkins has over 10000+ active opensource contributors
+- there are 2 variants of Jenkins
+  1. Jenkins open-source
+  2. Cloudbees ( Enterprise edition of Jenkins )
+- it supports creating CI build for any programming language
+</pre>
+
+## Info - Jenkins alternates
+<pre>
+- Team City
+- Bamboo
+- Microsoft's Team Foundation Server (TFS)
+- CircleCI
+</pre>
