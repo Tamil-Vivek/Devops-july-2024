@@ -285,6 +285,11 @@ Expected output
 </pre>
 
 ## Lab - Launching Jenkins from terminal
+Verify if already any application is using the port 8080
+```
+
+```
+
 The below command is a blocking command, hence don't press Ctrl+C, you may open new terminal tab to run other commands
 ```
 cd ~/Downloads
@@ -292,9 +297,7 @@ java -jar ./jenkins.jar
 ```
 
 Expected output
-![image](https://github.com/user-attachments/assets/3601d1fd-cc93-4961-9794-f16d2d1a97ec)
-![image](https://github.com/user-attachments/assets/8d059a6f-2005-4ac6-bff3-3a0e9868e0f8)
+![image](https://github.com/user-attachments/assets/8f1413aa-66f9-486f-b45e-bb32122c0b57)
+![image](https://github.com/user-attachments/assets/862429b9-e91d-4467-8b1c-5f088c621b9f)
+![image](https://github.com/user-attachments/assets/dd81048c-1005-4f35-a43e-76fd3af2c56f)
 
-Once you see "Jenkins is fully up and running", you may launch a web browser from your RPS Ubuntu lab machine and navigate to "http://localhost:8080"
-![image](https://github.com/user-attachments/assets/fcc32762-5222-4d61-b9d9-11173e944498)
-Login to Jenkins with username 'rps' and password 'rps'
