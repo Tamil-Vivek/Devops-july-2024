@@ -1,5 +1,8 @@
 # Day 4
 
+## Info - Ansible Playbook Structure
+![ansible](playbook.png)
+
 ## Lab - Listing all the modules ansible supports
 ```
 ansible-doc -l
