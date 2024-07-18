@@ -107,12 +107,16 @@ git pull
 cd Day4/ansible
 cat install-nginx-playbook.yml
 ansible-playbook -i hosts install-nginx-playbook.yml
+curl http://localhost:8001
+curl http://localhost:8002
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/dd6485ed-1629-45e2-b0e0-578fead02732)
 ![image](https://github.com/user-attachments/assets/771f4bbf-c17c-4cfa-8a6b-aa99f204484e)
 ![image](https://github.com/user-attachments/assets/41cd63f7-d2b1-4b2f-a9db-b19cc405b10d)
+![image](https://github.com/user-attachments/assets/b54e92d1-78ae-4291-ac88-71be942b3ff6)
+![image](https://github.com/user-attachments/assets/7f0e1d24-6105-45d3-8272-633f2c71fada)
 
 #### Things to note
 <pre>
