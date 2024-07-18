@@ -1,5 +1,11 @@
 - name: This playbook will install nginx, configure web root folder and deploys custom web page
   hosts: all
   tasks:
-  - name: Install nginx in Ubuntu node
+  - name: Install nginx in Ubuntu nodes
     apt: name=nginx state=latest update_cache=yes
+
+  - name: Install curl utility in Ubuntu nodes
+    apt: name=curl state=latest update_cache=yes
+
+  - name: Start the nginx service
+    service: name=nginx state=started
