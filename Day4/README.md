@@ -180,6 +180,24 @@ Expected output
 ![image](https://github.com/user-attachments/assets/dd0f2083-8df9-4370-9f8d-a6ab277dcf0f)
 ![image](https://github.com/user-attachments/assets/7247759f-9108-49fb-b979-80e0cea1a649)
 
+## Lab - Using template module in playbooks
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+ansible-playbook install-nginx-playbook.yml --ask-vault-pass
+```
+Expected output
+![image](https://github.com/user-attachments/assets/7e7ef51e-26c4-40bd-b33e-736301fc91e4)
+
+![image](https://github.com/user-attachments/assets/5d52d09a-18f6-4c99-a1c5-4b0cca700673)
+![image](https://github.com/user-attachments/assets/cf819212-e275-4f90-bdcc-cde07ecfea9f)
+![image](https://github.com/user-attachments/assets/638660e2-7671-4d41-98ce-b230a2d38f03)
+![image](https://github.com/user-attachments/assets/c7d2f04c-14ea-4c47-8122-cc97aed2d370)
+![image](https://github.com/user-attachments/assets/2c30f23f-a5ed-4927-8a8f-9cc6ef920eb3)
+![image](https://github.com/user-attachments/assets/eacff1b9-a41a-49fd-badd-1e55cafec46f)
+
+
 
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
