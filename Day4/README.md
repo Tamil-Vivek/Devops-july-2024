@@ -342,3 +342,4 @@ Return back to your Jenkins configuration page and paste the Maven Path as shown
 ![image](https://github.com/user-attachments/assets/ae33da72-f101-4b5d-b4ce-39029a709608)
 
 Click "Save" button
+![image](https://github.com/user-attachments/assets/fb7941c3-5794-4ff8-8801-d463537dfde2)
