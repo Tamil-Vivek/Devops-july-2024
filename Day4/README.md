@@ -44,6 +44,16 @@ ansible-playbook -i hosts ping-playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/4b611bbf-eed8-48d6-b425-6db167ff3fad)
 
+## Lab - Multiple Plays in a single Playbook
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cat multiple-play-in-a-playbook.yml
+ansible-playbook -i hosts multiple-play-in-a-playbook.yml
+```
+Expected output
+
 ## Info - SCRUM - Daily stand-up meeting
 <pre>
 - is an inspect and adapt meeting
@@ -102,3 +112,4 @@ Expected output
 - the QA certified release(application binaries) are deployed into customer's environment which is close to production environment ( pre-prod ) environment
 - the Customer will verify the functionality and if the customer found the application is working as expected and found to be stable, they can decide if they can make it live in production environment
 </pre>
+
