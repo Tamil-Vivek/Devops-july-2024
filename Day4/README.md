@@ -187,7 +187,7 @@ Create a file /home/rps/.my-vault-password with gedit and type 'root' without qu
 cd ~/devops-july-2024
 git pull
 cd Day4/ansible
-ansible-playbook install-nginx-playbook.yml
+ansible-playbook install-nginx-playbook.yml --ask-become-pass
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/7e7ef51e-26c4-40bd-b33e-736301fc91e4)
