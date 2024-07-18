@@ -1,5 +1,20 @@
 # Day 4
 
+## Info - Ansible Idempotency property
+<pre>
+- Idempotency is a feature of all Configuration Management tools including Ansible
+- Ansible color status
+  - Green - Success with no change
+  - Yellow - Success with change
+- Example
+  - when we install nginx web server in an Ubuntu Virtual machine via Ansible Playbook
+  - ansible will check if already the Virtual machine has latest version of nginx installed, in case it found that the machine already has latest version then ansible do will nothing, it will simply report the task was successful executed and it didn't change anything on the machine( it will report in green color )
+  - if suppose ansible found that the virtual machine has an older version of nginx, then ansible will upgrade the nginx to latest
+  - if suppose ansible found that the virtual machine has no nginx then, it will install the latest version of nginx
+  - once ansible has installed latest nginx when we execute the playbook it will simply report the status in green i.e it won't repeat the installation 
+  - this property is called Idempotency, we don't need to anything for this, ansible does this automatically
+</pre>
+
 ## Info - Ansible Playbook Structure
 ![ansible](playbook.png)
 
