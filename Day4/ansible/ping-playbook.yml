@@ -1,0 +1,5 @@
+- name: This playbook will ping the ansible nodes to see if ansible is able to communicate with nodes
+  hosts: all
+  tasks:
+  - name: Ping the Ubuntu ansible node
+    ping:
