@@ -364,7 +364,49 @@ Now, navigate to Sonarqube web page
 ![image](https://github.com/user-attachments/assets/a66eed57-4ed7-4220-8509-cffccc277fcc)
 ![image](https://github.com/user-attachments/assets/ec0062ab-d3f3-43a8-bac1-3a861a6c4f7b)
 
-  
+
+## Lab - Collecting Jenkins Performance metrics using Prometheus
+```
+docker run -d --name prometheus --hostname prometheus -p 9090:9090 bitnami/prometheus:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/24f08f5e-6100-4968-8769-ee489388838d)
+
+Launch prometheus web page
+<pre>
+http://localhost:9090  
+</pre>  
+
+![image](https://github.com/user-attachments/assets/41402740-40ff-4ce4-ab0e-a7e2f37ec264)
+
+We need to install "Prometheus Metrics Plugins" in Jenkins --> Manage Jenkins --> Plugins --> Available Plugins
+![image](https://github.com/user-attachments/assets/3d979b66-e44b-4960-bd53-97d7f70de7df)
+![image](https://github.com/user-attachments/assets/406d3e7f-c638-4522-b3ff-5e19a2e7f503)
+Make sure, Jenkins is restarted
+![image](https://github.com/user-attachments/assets/404bac17-c2bd-438f-badd-b547ccb79ba7)
+![image](https://github.com/user-attachments/assets/375ecf88-ff7e-4e5e-8a1b-5df031de3c52)
+
+You should now be able to access the Jenkins Performance metrics at this REST endpoint url
+<pre>
+http://localhost:8080/prometheus  
+</pre>  
+![image](https://github.com/user-attachments/assets/3d0f9215-e235-4587-84ea-451e21677f7f)
+
+You can copy the prometheus.yml from local machine to prometheus container
+```
+cd ~/devops-july-2024
+cd Day5/prometheus
+docker cp prometheus.yml prometheus:/opt/bitnami/prometheus/conf/prometheus.yml
+docker restart prometheus
+docker ps
+```
+![image](https://github.com/user-attachments/assets/9edb574d-c1a0-4f12-adfc-8268f4bf232b)
+![image](https://github.com/user-attachments/assets/abee834b-6fd5-4fa1-9def-a6c87686e9ae)
+![image](https://github.com/user-attachments/assets/6e465e10-0627-480d-b68e-c5f100064f10)
+
+## 
 ## Kindly complete the post test from RPS Ubuntu Lab machine
 <pre>
 https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX19j/JRJUst8ogiG8/LMMqIY1qx1nC+NKovq0VhVBnxEnUaMEeLXCwBHnLe5f7DwvpA6gcNOYLQ0Hw==  
