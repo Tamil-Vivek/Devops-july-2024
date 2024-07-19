@@ -265,3 +265,14 @@ Troubleshooting - In case you are not seeing the Pipeline view
 ![image](https://github.com/user-attachments/assets/05981597-ffd7-43dd-acfa-5d9579336a48)
 ![image](https://github.com/user-attachments/assets/166d46cf-47c4-4a16-88b6-e587c3be03d9)
 ![image](https://github.com/user-attachments/assets/bb6dd46f-d906-4295-8826-bec8db4e3ef7)
+
+
+## Kindly complete the post test from RPS Ubuntu Lab machine
+<pre>
+https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX19j/JRJUst8ogiG8/LMMqIY1qx1nC+NKovq0VhVBnxEnUaMEeLXCwBHnLe5f7DwvpA6gcNOYLQ0Hw==  
+</pre>
+
+## Kindly share your training feedback here
+<pre>
+https://survey.zohopublic.com/zs/0K0FUi
+</pre>
