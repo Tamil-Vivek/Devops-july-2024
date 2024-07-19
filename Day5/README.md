@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/4d9be417-fc81-4eaa-bc03-403406ff17ef)# Day 5
-
+# Day 5
+![image](https://github.com/user-attachments/assets/4d9be417-fc81-4eaa-bc03-403406ff17ef)
 ## Lab - Installing Docker and Ansible Jenkins Plugins
 ![image](https://github.com/user-attachments/assets/75a8aada-8522-473e-9976-45a5c774acb6)
 Click on "Manage Jenkins"
