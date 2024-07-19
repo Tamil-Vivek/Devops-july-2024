@@ -151,5 +151,3 @@ cd Day4/ansible
 cp ansible.cfg ~/.ansible.cfg
 ```
 ![image](https://github.com/user-attachments/assets/0224fab5-e654-401a-8d55-6c4db4d9770c)
-
-![image](https://github.com/user-attachments/assets/455b9246-d92b-4618-92da-ffcf956b10a5)
