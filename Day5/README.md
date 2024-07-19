@@ -54,3 +54,9 @@ Under Branches to build, replace "master" with "main" branch
 Triggers
 Select "Poll SCM" and type "H/02 * * * *" under schedule
 ![image](https://github.com/user-attachments/assets/afada48b-7406-4392-8f90-8c3382119a47)
+
+Build
+
+Under "Root pom" we need to give the relative path where Jenkins can find the pom.xml
+"Day3/maven/multi-module-project/pom.xml"
+![image](https://github.com/user-attachments/assets/03165093-22ba-4824-a319-d672cd67690f)
