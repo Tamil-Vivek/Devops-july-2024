@@ -132,3 +132,24 @@ Click "save" button
 ![image](https://github.com/user-attachments/assets/4835d240-7aea-47f0-8696-c8ffc63015c0)
 ![image](https://github.com/user-attachments/assets/a2661c8b-4f83-469e-8b64-bde069998a02)
 
+## Lab - Invoking Ansible Playing using Ansible Jenkins plugin
+
+### Things to remember
+<pre>
+- Ansible searches for ansible.cfg as mentioned in the ANSIBLE_CONFIG environment variable
+- In case you have exported the ANSIBLE_CONFIG environment variable, then ansible searches for ansible.cfg in the current directory
+- In case, the ansible.cfg is not present in the current folder then ansible searches for .ansible.cfg under your home directory
+- In case, the ~/.ansible.cfg is not found then ansible finally searches ansible.cfg under /etc/ansible/ansible.cfg folder
+- In the above paths, wherever ansible finds the ansible.cfg first it picks it and ignores the other options.
+</pre>
+
+Copy the ansible.cfg from your Day4/ansible folder to your home directory
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cp ansible.cfg ~/.ansible.cfg
+```
+![image](https://github.com/user-attachments/assets/0224fab5-e654-401a-8d55-6c4db4d9770c)
+
+![image](https://github.com/user-attachments/assets/455b9246-d92b-4618-92da-ffcf956b10a5)
