@@ -62,3 +62,6 @@ Under "Root pom" we need to give the relative path where Jenkins can find the po
 ![image](https://github.com/user-attachments/assets/03165093-22ba-4824-a319-d672cd67690f)
 Under the "Goals and options" type "clean deploy"
 ![image](https://github.com/user-attachments/assets/c5319756-2aa9-4722-9e8c-98c675fb2db3)
+
+Scroll down to click on "Save" button
+![image](https://github.com/user-attachments/assets/a91d82e9-c477-4f03-94fd-de3386084f14)
