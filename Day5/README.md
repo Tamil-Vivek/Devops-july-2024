@@ -179,6 +179,9 @@ We need to configure the Docker Service (Service) - Do this in the terminal
 ```
 sudo systemctl status docker
 sudo gedit /usr/lib/systemd/system/docker.service
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+sudo systemctl status docker
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/c2cdd716-5613-423b-be5a-8fb197a848c8)
