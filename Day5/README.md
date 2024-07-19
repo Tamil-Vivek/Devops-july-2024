@@ -65,3 +65,6 @@ Under the "Goals and options" type "clean deploy"
 
 Scroll down to click on "Save" button
 ![image](https://github.com/user-attachments/assets/a91d82e9-c477-4f03-94fd-de3386084f14)
+
+![image](https://github.com/user-attachments/assets/7ab0b990-2011-4347-9fe1-546e8d054ac5)
+![image](https://github.com/user-attachments/assets/637a55c2-8a6a-44b4-bad3-bfd76ff61ecd)
