@@ -1,4 +1,4 @@
-# Day 5
+![image](https://github.com/user-attachments/assets/52737bea-a84a-45ec-91e5-f5ab3b3c50dc)# Day 5
 ## Lab - Installing Docker and Ansible Jenkins Plugins
 ![image](https://github.com/user-attachments/assets/75a8aada-8522-473e-9976-45a5c774acb6)
 Click on "Manage Jenkins"
@@ -292,12 +292,37 @@ username - admin
 password - admin
 </pre>
 
+![image](https://github.com/user-attachments/assets/baed993b-3a49-4e40-98d5-1502ae9147d0)
+
+
 Change the password as below below
 <pre>
 username - admin
 password - Admin@123
 </pre>  
 
+![image](https://github.com/user-attachments/assets/83e09e8f-8b8e-4f73-b681-f43797a4992f)
+
+Once you have updated the password, page looks as shown below
+![image](https://github.com/user-attachments/assets/8d6490f3-fedb-4326-9a7d-f8c3336d8907)
+
+Select "Create a local project"
+![image](https://github.com/user-attachments/assets/c9eb9dd0-f205-409c-bbd4-6a39177b46a2)
+Click Next
+![image](https://github.com/user-attachments/assets/c7dccb60-2795-49c6-990b-a5730c8fddb2)
+Click "Create project"
+Click "Generate" to generate token
+![image](https://github.com/user-attachments/assets/4f2b7c24-02a8-4f8a-bc25-a97f16a06315)
+Save the token somewhere and click "continue" button
+![image](https://github.com/user-attachments/assets/feed9476-e62d-44ab-be3a-7edc440e4186)
+Select "Maven"
+![image](https://github.com/user-attachments/assets/72011fac-1831-4e78-83b6-a0e576eae0f0)
+Copy the maven command and save it in a file
+```
+
+```
+![image](https://github.com/user-attachments/assets/f8a2b9b7-10ed-4946-9431-3d1bbe17f82e)
+![image](https://github.com/user-attachments/assets/e0733fb8-5773-41fb-be83-cecdd50bf15c)
 
   
 ## Kindly complete the post test from RPS Ubuntu Lab machine
