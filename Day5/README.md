@@ -70,3 +70,20 @@ Scroll down to click on "Save" button
 ![image](https://github.com/user-attachments/assets/637a55c2-8a6a-44b4-bad3-bfd76ff61ecd)
 ![image](https://github.com/user-attachments/assets/0967f96f-88b9-4172-ad02-3c93d442386b)
 ![image](https://github.com/user-attachments/assets/0a0e40d1-3250-4a9b-b802-e5568758d31b)
+
+
+## Lab - Creating a Freestyle Jenkins Job
+![image](https://github.com/user-attachments/assets/5316809a-7f74-4c35-a15f-de222cfcb4cf)
+Click "New item"
+![image](https://github.com/user-attachments/assets/e6c39e76-a0dc-4a08-b475-d3992e09f1a0)
+Type "Freestyle Jenkins Job" under the item name and select "Freestyle project"
+![image](https://github.com/user-attachments/assets/bdab028d-14f0-4954-9e42-faea48427be5)
+Click "Ok" button
+![image](https://github.com/user-attachments/assets/82844975-0f0e-4a58-848d-aa5278ddf80e)
+
+General section
+![image](https://github.com/user-attachments/assets/dbb5db5b-8c5c-4dea-918c-da88825ff8eb)
+
+Source Code Management
+Type https://github.com/tektutor/devops-july-2024.git under repository url and replace "*/master" with "*/main" under Branch specifier
+![image](https://github.com/user-attachments/assets/36457f78-91e6-475a-b718-bb89b4292eb8)
