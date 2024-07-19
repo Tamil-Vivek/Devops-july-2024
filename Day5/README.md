@@ -7,4 +7,15 @@ Click on "Manage Jenkins"
 Click "Plugins"
 ![image](https://github.com/user-attachments/assets/e839a1ae-1dab-41bc-8ffa-8cf5e81145e2)
 Select "Available Plugins"
+![image](https://github.com/user-attachments/assets/8e57a501-c18d-4ef8-af27-5767e49192bc)
+Search "Docker" and Select "Docker 1.6.2"
+![image](https://github.com/user-attachments/assets/83459d39-3083-46d5-884e-7d185f5f1e54)
+Search "Ansible" and Select "Ansible"
+![image](https://github.com/user-attachments/assets/aeffdaa7-b33f-4ad8-8ef7-acee56b0ec7c)
+Click "Install"
+![image](https://github.com/user-attachments/assets/ae195671-f2c1-4f76-8269-905fcf7ad324)
+Select check "Restart Jenkins when installation is complete and no jobs are running"
+![image](https://github.com/user-attachments/assets/4cdb930a-178b-40ab-b60e-aebf652f3fc3)
+In case, you don't see any progress refresh your web browser page
+![image](https://github.com/user-attachments/assets/6f32e2a7-206d-4ca5-a07a-86e36e122e0d)
 
