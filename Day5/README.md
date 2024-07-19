@@ -108,6 +108,9 @@ Click "Save" button
 ![image](https://github.com/user-attachments/assets/635338a7-db10-4244-9fae-f2640a7a030c)
 
 ## Lab - Creating a FreeStyle Jenkins Job and triggering Ansible Playbook
+Create a file name ~/.become-password-file and type 'rps' without quotes, save and close the file.
+
+
 ![image](https://github.com/user-attachments/assets/9d123e37-d2e5-4408-a4f7-914148c85300)
 Click "New Item"
 ![image](https://github.com/user-attachments/assets/38e8843a-07d0-4234-95dc-30dfdfc5366d)
