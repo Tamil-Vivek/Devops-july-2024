@@ -351,6 +351,8 @@ mvn clean verify sonar:sonar \
 ![image](https://github.com/user-attachments/assets/01f9b3fb-c93d-48bc-8376-260ad38b504c)
 ![image](https://github.com/user-attachments/assets/cccb981b-548e-4f39-8fd7-25b0d9297a5d)
 ![image](https://github.com/user-attachments/assets/27d87fa3-9efa-44a8-a652-1ceea686c0f1)
+![image](https://github.com/user-attachments/assets/70761998-f98f-4067-b59a-52212c7fdb9e)
+
 Save it.
 Wait for it run automatically
 
