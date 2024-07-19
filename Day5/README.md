@@ -234,6 +234,11 @@ General
 Build Triggers
 ![image](https://github.com/user-attachments/assets/197dc75a-5489-4b5b-a7f2-172001e09092)
 
+Make sure you update the dockerimage as shown below
+Under Manage Jenkins --> Clouds --> docker-jenkins-slave --> Docker Agent Templates --> Docker Image
+![image](https://github.com/user-attachments/assets/131441d1-584e-494b-bf64-6b37d196ed0f)
+
+
 Pipeline
 <pre>
 1. Pipeline --> Definition --> Select "Pipeline Script from SCM"
@@ -247,3 +252,8 @@ Pipeline
 Click "Save" button
 ![image](https://github.com/user-attachments/assets/d6cb0b88-cf6b-4145-b354-3eb9c6f0dc56)
 
+
+Expected output
+![image](https://github.com/user-attachments/assets/4ca82eeb-9f2c-4721-b9bd-01b7430600ac)
+![image](https://github.com/user-attachments/assets/2ff02c18-065c-4d5d-a2c0-1f756a3f9498)
+![image](https://github.com/user-attachments/assets/830c335e-36c4-4d1f-bde8-b0df8cd30133)
