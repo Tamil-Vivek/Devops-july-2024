@@ -173,3 +173,30 @@ cp ansible.cfg ~/.ansible.cfg
 - the slave nodes can be ec2 instance running in aws, azure vm instances, or could on-prem virtual machine or physical machine or docker containers
 - in our case, we are going to use docker containers as Jenkins slave nodes
 </pre>
+
+## Lab - Configuring Docker containers as Jenkins slave nodes
+
+We need to configure the Docker Service (Service) - Do this in the terminal
+```
+sudo systemctl status docker
+gedit 
+```
+Expected output
+![image](https://github.com/user-attachments/assets/c2cdd716-5613-423b-be5a-8fb197a848c8)
+![image](https://github.com/user-attachments/assets/6e7ba1a9-6f14-4c3a-ba6e-c8741cc4a034)
+![image](https://github.com/user-attachments/assets/8cc99836-ef97-4b7f-af75-8bba37532028)
+Save and exit
+
+
+
+![image](https://github.com/user-attachments/assets/881523eb-1092-4196-b200-4992e13514e2)
+Manage Jenkins
+![image](https://github.com/user-attachments/assets/f251e0b1-ed7a-46aa-bec3-37c543c60946)
+Click on "Clouds"
+![image](https://github.com/user-attachments/assets/4bd415e9-738a-4073-91d9-8b3b96c82faf)
+New Cloud
+![image](https://github.com/user-attachments/assets/04a0ed81-9966-4a0f-ace7-5d229a9e7b89)
+![image](https://github.com/user-attachments/assets/cfc91899-124b-46c0-912a-0b41d3c26a6f)
+Click "Create"
+![image](https://github.com/user-attachments/assets/ad411d9c-0e72-442b-9afb-1fb4474a2d12)
+Expand "Docker Cloud details"
