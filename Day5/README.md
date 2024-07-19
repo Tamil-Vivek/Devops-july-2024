@@ -266,7 +266,36 @@ Troubleshooting - In case you are not seeing the Pipeline view
 ![image](https://github.com/user-attachments/assets/166d46cf-47c4-4a16-88b6-e587c3be03d9)
 ![image](https://github.com/user-attachments/assets/bb6dd46f-d906-4295-8826-bec8db4e3ef7)
 
+## Lab - Starting SonarQube server as a container
+```
+docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+docker ps
+docker images
+docker logs sonarqube
+```
+Expected output
+![image](https://github.com/user-attachments/assets/96e4a9a9-7662-45b3-8c53-2b2fa4b30862)
+![image](https://github.com/user-attachments/assets/a55561bf-c1d5-468b-8739-af2525bcaf22)
 
+Login to SonarQube web page from your RPS Lab machine
+<pre>
+http://localhost:9000  
+</pre>
+
+Default Login credentials
+<pre>
+username - admin
+password - admin
+</pre>
+
+Change the password as below below
+<pre>
+username - admin
+password - Admin@123
+</pre>  
+
+
+  
 ## Kindly complete the post test from RPS Ubuntu Lab machine
 <pre>
 https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX19j/JRJUst8ogiG8/LMMqIY1qx1nC+NKovq0VhVBnxEnUaMEeLXCwBHnLe5f7DwvpA6gcNOYLQ0Hw==  
@@ -276,3 +305,4 @@ https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX19j/JRJUst8ogiG8/LMMq
 <pre>
 https://survey.zohopublic.com/zs/0K0FUi
 </pre>
+
