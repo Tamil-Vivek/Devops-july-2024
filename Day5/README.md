@@ -151,3 +151,13 @@ cd Day4/ansible
 cp ansible.cfg ~/.ansible.cfg
 ```
 ![image](https://github.com/user-attachments/assets/0224fab5-e654-401a-8d55-6c4db4d9770c)
+![image](https://github.com/user-attachments/assets/c1e07efd-c9dd-40cc-824b-51e6acd6e345)
+![image](https://github.com/user-attachments/assets/f7da046e-099a-42a5-8f15-26d018441d21)
+![image](https://github.com/user-attachments/assets/f3a5de23-c4cd-4703-ba8a-d137ff3835e2)
+![image](https://github.com/user-attachments/assets/ff39b648-c3d4-4424-aa4e-46208afd8778)
+![image](https://github.com/user-attachments/assets/661d72cb-b501-4b2f-924a-2341ab4f34ec)
+![image](https://github.com/user-attachments/assets/834722ee-aa0b-4cae-bc9b-9ed638b5b091)
+![image](https://github.com/user-attachments/assets/ae018c98-2ef9-4e01-b1f4-298f4781f93d)
+![image](https://github.com/user-attachments/assets/9d0aaabf-aa9f-4521-8687-0655cda58733)
+![image](https://github.com/user-attachments/assets/37a28a1c-d45d-42b5-827b-c360a7f7afa9)
+![image](https://github.com/user-attachments/assets/c2080087-8784-47db-a313-70606b5fbca1)
