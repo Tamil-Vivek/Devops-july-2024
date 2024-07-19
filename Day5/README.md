@@ -355,6 +355,14 @@ mvn clean verify sonar:sonar \
 
 Save it.
 Wait for it run automatically
+![image](https://github.com/user-attachments/assets/ec11a569-327f-4b46-99b6-aaff8e56d1ac)
+![image](https://github.com/user-attachments/assets/fe4016f6-dd32-48db-b421-ad7c022dd345)
+
+Now, navigate to Sonarqube web page
+![image](https://github.com/user-attachments/assets/4ca35da7-2eb3-402f-9b6b-72d8f456d7bf)
+![image](https://github.com/user-attachments/assets/f1b0799a-d706-47f2-b6aa-e7d089b068ea)
+![image](https://github.com/user-attachments/assets/a66eed57-4ed7-4220-8509-cffccc277fcc)
+![image](https://github.com/user-attachments/assets/ec0062ab-d3f3-43a8-bac1-3a861a6c4f7b)
 
   
 ## Kindly complete the post test from RPS Ubuntu Lab machine
