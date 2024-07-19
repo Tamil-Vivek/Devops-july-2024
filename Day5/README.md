@@ -117,6 +117,8 @@ Type "Invoke Ansible Playbook" and Copy project from "Freestyle Jenkins Job"
 Click "ok" button
 ![image](https://github.com/user-attachments/assets/03836181-7679-42f7-9840-c3081c0cd1c9)
 
+![image](https://github.com/user-attachments/assets/d9778524-ffa2-4fc9-ab4e-4f9c7b7cd208)
+
 Build Steps
 ![image](https://github.com/user-attachments/assets/ed0e2f05-54ac-4a74-a496-798670521d7b)
 
