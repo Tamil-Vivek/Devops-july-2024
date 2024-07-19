@@ -161,3 +161,15 @@ cp ansible.cfg ~/.ansible.cfg
 ![image](https://github.com/user-attachments/assets/9d0aaabf-aa9f-4521-8687-0655cda58733)
 ![image](https://github.com/user-attachments/assets/37a28a1c-d45d-42b5-827b-c360a7f7afa9)
 ![image](https://github.com/user-attachments/assets/c2080087-8784-47db-a313-70606b5fbca1)
+
+## Info - Jenkins Master-Slave Node Setup usecases
+<pre>
+- Currently used Jenkins is the Master Jenkins that comes with Web GUI
+- We could add many slave Jenkins which are headless, they only instructions from Jenkins Master
+- end-users will not able to give instructions or interact with Jenkins slave instances
+- the main usecase of master-slave node setup is
+  - to support executing parallel builds
+  - to support running builds and testing in different OS environments
+- the slave nodes can be ec2 instance running in aws, azure vm instances, or could on-prem virtual machine or physical machine or docker containers
+- in our case, we are going to use docker containers as Jenkins slave nodes
+</pre>
