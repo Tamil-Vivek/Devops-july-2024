@@ -94,3 +94,13 @@ Type "H/02 * * * *" under Poll SCM --> schedule
 
 Build Steps
 ![image](https://github.com/user-attachments/assets/1caf5e66-ddf7-4d4e-8483-e6b5d7c57aa3)
+![image](https://github.com/user-attachments/assets/4bc194db-b00a-40a3-b37e-5f2c176f8ba7)
+Select "Execute Shell"
+![image](https://github.com/user-attachments/assets/c4117c93-e5ba-457a-9595-cdab74904ee3)
+Under the Execute Shell --> command type
+```
+cd Day3/maven/multi-module-project
+mvn clean install
+```
+![image](https://github.com/user-attachments/assets/5722d383-d29f-49bb-b21e-c5438184ec22)
+
