@@ -26,3 +26,19 @@ Clear Search and search for Ansible
 Once you have confirmed that all necessary plugins are installed, let's go back to the Jenkins Dashboard landing page
 ![image](https://github.com/user-attachments/assets/2c0706f7-5cd7-44c8-92e4-69c8ea0755da)
 
+
+## Lab - Creating a Maven style Jenkins Job
+![image](https://github.com/user-attachments/assets/2c0706f7-5cd7-44c8-92e4-69c8ea0755da)
+In the center of the Jenkins page click "Create a Job" or you may click "Create Item" from the menu shown in the left side.
+![image](https://github.com/user-attachments/assets/fdacc918-165b-4a2e-8c2f-0fc75c6c7aa4)
+As the Maven style Job is missing, we need to install "Maven Integration Plugin". Navigate to "Manage Jenkins" --> "Plugins" --> "Available Plugins" search for "Maven Integration" and install and restart.
+![image](https://github.com/user-attachments/assets/1633726e-7559-41b2-98f7-a832052b27db)
+![image](https://github.com/user-attachments/assets/aeb70368-5a4f-404e-9548-33dfe94a1685)
+
+![image](https://github.com/user-attachments/assets/2c0706f7-5cd7-44c8-92e4-69c8ea0755da)
+From the landing page, let's click "Create a Job"
+![image](https://github.com/user-attachments/assets/1b33ea2d-9f83-42c0-ab8c-859a44c1a302)
+Select "Maven Project" and type "Hello Maven Jenkins Job" under Enter an item name
+![image](https://github.com/user-attachments/assets/e7ece0d9-09d5-4dc5-b12e-77c5008fbba1)
+Click "ok" button
+![image](https://github.com/user-attachments/assets/a3476ceb-e665-4930-85bd-e3bb0747406b)
