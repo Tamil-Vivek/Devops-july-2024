@@ -1,4 +1,4 @@
-# Day 5
+![image](https://github.com/user-attachments/assets/4d9be417-fc81-4eaa-bc03-403406ff17ef)# Day 5
 
 ## Lab - Installing Docker and Ansible Jenkins Plugins
 ![image](https://github.com/user-attachments/assets/75a8aada-8522-473e-9976-45a5c774acb6)
@@ -179,7 +179,7 @@ cp ansible.cfg ~/.ansible.cfg
 We need to configure the Docker Service (Service) - Do this in the terminal
 ```
 sudo systemctl status docker
-gedit 
+gedit /usr/lib/systemd/system/docker.service
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/c2cdd716-5613-423b-be5a-8fb197a848c8)
