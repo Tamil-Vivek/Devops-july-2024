@@ -188,6 +188,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/6e7ba1a9-6f14-4c3a-ba6e-c8741cc4a034)
 ![image](https://github.com/user-attachments/assets/8cc99836-ef97-4b7f-af75-8bba37532028)
 Save and exit
+![image](https://github.com/user-attachments/assets/c158c842-9983-47a3-92b6-b1b176bd5890)
+![image](https://github.com/user-attachments/assets/f56b7fb2-af23-4084-bfa4-e90c130c0461)
 
 
 
