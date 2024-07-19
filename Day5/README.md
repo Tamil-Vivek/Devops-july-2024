@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/52737bea-a84a-45ec-91e5-f5ab3b3c50dc)# Day 5
+![image](https://github.com/user-attachments/assets/b4e164e9-43e5-4359-932c-8e74c354af36)![image](https://github.com/user-attachments/assets/52737bea-a84a-45ec-91e5-f5ab3b3c50dc)# Day 5
 ## Lab - Installing Docker and Ansible Jenkins Plugins
 ![image](https://github.com/user-attachments/assets/75a8aada-8522-473e-9976-45a5c774acb6)
 Click on "Manage Jenkins"
@@ -323,6 +323,36 @@ Copy the maven command and save it in a file
 ```
 ![image](https://github.com/user-attachments/assets/f8a2b9b7-10ed-4946-9431-3d1bbe17f82e)
 ![image](https://github.com/user-attachments/assets/e0733fb8-5773-41fb-be83-cecdd50bf15c)
+
+Create a Freestyle Jenkins job with name "SonarStaticCodeAnalysis"
+![image](https://github.com/user-attachments/assets/8df2e511-20d6-4b55-9e59-8a7806768c17)
+
+General
+![image](https://github.com/user-attachments/assets/52eced4c-76a2-493d-9e74-959aae3d0cf9)
+
+Source Code Management
+![image](https://github.com/user-attachments/assets/f9d55d20-3b8e-4fe9-8d67-f0f1d185be0c)
+![image](https://github.com/user-attachments/assets/0d19664a-2071-4084-a0aa-82f0255ae842)
+
+Build Triggers
+![image](https://github.com/user-attachments/assets/0de60cd1-df13-4673-975b-ffa38d1575d7)
+
+Paste the command, Under Build Steps --> Execute Shell
+```
+cd Day5/CICD/maven/multi-module-project
+mvn compile
+
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=tektutor \
+  -Dsonar.projectName='tektutor' \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=sqp_ed147ee226aa61544b603aab780dd323644a6698
+```
+![image](https://github.com/user-attachments/assets/01f9b3fb-c93d-48bc-8376-260ad38b504c)
+![image](https://github.com/user-attachments/assets/cccb981b-548e-4f39-8fd7-25b0d9297a5d)
+![image](https://github.com/user-attachments/assets/27d87fa3-9efa-44a8-a652-1ceea686c0f1)
+Save it.
+Wait for it run automatically
 
   
 ## Kindly complete the post test from RPS Ubuntu Lab machine
