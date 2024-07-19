@@ -42,3 +42,11 @@ Select "Maven Project" and type "Hello Maven Jenkins Job" under Enter an item na
 ![image](https://github.com/user-attachments/assets/e7ece0d9-09d5-4dc5-b12e-77c5008fbba1)
 Click "ok" button
 ![image](https://github.com/user-attachments/assets/a3476ceb-e665-4930-85bd-e3bb0747406b)
+
+General Section
+![image](https://github.com/user-attachments/assets/8f924ac4-720c-4d83-bedb-f776a4cde6fd)
+
+Source Code Management
+Select "Git" and type https://github.com/tektutor/devops-july-2024.git under "Repository Url"
+Under Branches to build, replace "master" with "main" branch
+![image](https://github.com/user-attachments/assets/96a0ecdf-9947-4582-90c7-ce870538eb1b)
