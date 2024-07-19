@@ -50,3 +50,7 @@ Source Code Management
 Select "Git" and type https://github.com/tektutor/devops-july-2024.git under "Repository Url"
 Under Branches to build, replace "master" with "main" branch
 ![image](https://github.com/user-attachments/assets/96a0ecdf-9947-4582-90c7-ce870538eb1b)
+
+Triggers
+Select "Poll SCM" and type "H/02 * * * *" under schedule
+![image](https://github.com/user-attachments/assets/afada48b-7406-4392-8f90-8c3382119a47)
