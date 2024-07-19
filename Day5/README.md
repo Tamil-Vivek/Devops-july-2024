@@ -206,3 +206,15 @@ Click "Create"
 Expand "Docker Cloud details"
 ![image](https://github.com/user-attachments/assets/03a6b37f-f034-4307-a1b5-91a8d620bf1b)
 ![image](https://github.com/user-attachments/assets/3448e9de-1a46-4cc9-af34-34b3ad4c35dc)
+
+Scroll Down to see "Docker Agent Templates"
+![image](https://github.com/user-attachments/assets/6483f61c-878a-43c6-b8eb-f5900f3dfd54)
+Add Docker Template
+![image](https://github.com/user-attachments/assets/0b238bde-51b2-4d5c-9bea-8331446ee740)
+![image](https://github.com/user-attachments/assets/fcd58715-4c6d-4022-9ffd-4ca2c26204f7)
+![image](https://github.com/user-attachments/assets/a25c33c6-f754-4981-bb4b-2848a571bea5)
+![image](https://github.com/user-attachments/assets/3e156d7a-7ef9-4872-98e3-3f09429612fd)
+![image](https://github.com/user-attachments/assets/335c22e3-da96-48b9-ac8f-0c86a7ead3fc)
+
+Click "Save" button
+![image](https://github.com/user-attachments/assets/a2158751-b3ab-4d75-b6c1-674c2c395b1d)
