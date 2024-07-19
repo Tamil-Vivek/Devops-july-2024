@@ -1,0 +1,18 @@
+- name: This playbook will provision the ubuntu anisble node containers
+  hosts: localhost
+  tasks:
+  - name: Delete all container whose name starts with ubuntu
+    shell: docker rm -f $(docker ps -aqf "name=ubuntu*")
+    ignore_errors: yes
+      
+  - name: Provision ubuntu containers
+    docker_container:
+      name: "ubuntu-{{item}}"
+      hostname: "ubuntu-{{item}}"
+      image: "tektutor/ansible-ubuntu-node:latest"
+      state: started
+      ports:
+      - "8{{item}}:80"
+      - "2{{item}}:22"
+    with_sequence: start=1 end=2 format="%03d"
+
