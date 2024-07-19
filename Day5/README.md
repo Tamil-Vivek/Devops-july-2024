@@ -87,3 +87,10 @@ General section
 Source Code Management
 Type https://github.com/tektutor/devops-july-2024.git under repository url and replace "*/master" with "*/main" under Branch specifier
 ![image](https://github.com/user-attachments/assets/36457f78-91e6-475a-b718-bb89b4292eb8)
+
+Build Triggers
+Type "H/02 * * * *" under Poll SCM --> schedule
+![image](https://github.com/user-attachments/assets/2c1892e9-8575-4ccf-a8ab-8e4248ba8731)
+
+Build Steps
+![image](https://github.com/user-attachments/assets/1caf5e66-ddf7-4d4e-8483-e6b5d7c57aa3)
