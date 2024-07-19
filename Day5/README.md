@@ -406,7 +406,66 @@ docker ps
 ![image](https://github.com/user-attachments/assets/abee834b-6fd5-4fa1-9def-a6c87686e9ae)
 ![image](https://github.com/user-attachments/assets/6e465e10-0627-480d-b68e-c5f100064f10)
 
-## 
+## Lab - Creating Grafana server container
+```
+docker run -d --name=grafana --hostname=grafana -p 3000:3000 grafana/grafana
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8b0443b3-d06e-4e64-a1b4-029a2c201555)
+![image](https://github.com/user-attachments/assets/d08b6aa3-ed6d-403f-b0ce-3ef6678c3227)
+
+Accessing Grafana Dashboard from web browser
+<pre>
+http://localhost:3000  
+</pre>  
+
+Default Login credentials
+<pre>
+username - admin
+password - admin
+</pre>
+![image](https://github.com/user-attachments/assets/9d407ac3-a6ef-436a-9a3b-e2145ed52888)
+![image](https://github.com/user-attachments/assets/1fb73c77-30e4-48fc-8e26-da40270d27f7)
+Change the password to "Admin@123" without quotes
+![image](https://github.com/user-attachments/assets/2fe7f78c-2512-438f-bc47-5fe0764e236a)
+![image](https://github.com/user-attachments/assets/90f5d855-93b3-41e0-ba24-027ee3f93301)
+
+On the left side menu, select Connections --> Datasources 
+![image](https://github.com/user-attachments/assets/abdebc13-51a6-4f91-8dcc-f123b9507368)
+Add Datasource
+![image](https://github.com/user-attachments/assets/ea7b4d34-0aa0-4354-8f34-4f827bd074a5)
+Select Prometheus
+![image](https://github.com/user-attachments/assets/b14742e4-7a71-4110-b14e-733dc6ca7c6a)
+![image](https://github.com/user-attachments/assets/d82c4fa6-5271-4d6b-ab7f-5fc960f0a7d8)
+Under the Prometheus server url, type 192.168.1.104:9090
+![image](https://github.com/user-attachments/assets/375ad4aa-faeb-4145-9e0b-6f2bace17fbe)
+Authentication, provide prometheus login credentials
+<pre>
+username - admin
+password - Admin@123
+</pre>  
+
+Scroll down
+![image](https://github.com/user-attachments/assets/76604d8a-b786-4aae-9989-f5effc93a2a0)
+Save and Test
+![image](https://github.com/user-attachments/assets/74aa8fc1-4d99-4aec-b607-a89359f83a58)
+
+On the left side menu, select Dashboard
+![image](https://github.com/user-attachments/assets/7a84ab6b-eb3f-4847-b836-c26981ec42e4)
+On the top right corner, click the new and select "import" from the drop-drop option
+![image](https://github.com/user-attachments/assets/5806639a-7f86-415b-ba4f-42ab6212d8a0)
+![image](https://github.com/user-attachments/assets/71c0bde0-cbd3-46ba-b8f4-bc00e8fecb98)
+Under the Grafana ID, type 9964
+![image](https://github.com/user-attachments/assets/914a8bb1-ba42-457a-9199-1b3dfed9a0c2)
+Click on Load
+![image](https://github.com/user-attachments/assets/55869a43-fcf7-475e-8930-cef39f5f317e)
+Make sure the prometheus datasource we created is selected
+![image](https://github.com/user-attachments/assets/7e98080f-944d-4db2-b215-42925fb3a0ce)
+Click "Import" button to see the dashboard with the Jenkins metrics collected by Protheus
+![image](https://github.com/user-attachments/assets/b6d2f246-39a0-4ea3-b38b-4391e206862c)
+
 ## Kindly complete the post test from RPS Ubuntu Lab machine
 <pre>
 https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX19j/JRJUst8ogiG8/LMMqIY1qx1nC+NKovq0VhVBnxEnUaMEeLXCwBHnLe5f7DwvpA6gcNOYLQ0Hw==  
