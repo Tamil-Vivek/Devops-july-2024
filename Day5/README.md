@@ -258,3 +258,10 @@ Expected output
 ![image](https://github.com/user-attachments/assets/2ff02c18-065c-4d5d-a2c0-1f756a3f9498)
 ![image](https://github.com/user-attachments/assets/830c335e-36c4-4d1f-bde8-b0df8cd30133)
 ![image](https://github.com/user-attachments/assets/84e0b49a-abf5-428b-8d74-f0664963522b)
+
+
+Troubleshooting - In case you are not seeing the Pipeline view
+![image](https://github.com/user-attachments/assets/920b5b00-8461-4527-967c-04c182d691f5)
+![image](https://github.com/user-attachments/assets/05981597-ffd7-43dd-acfa-5d9579336a48)
+![image](https://github.com/user-attachments/assets/166d46cf-47c4-4a16-88b6-e587c3be03d9)
+![image](https://github.com/user-attachments/assets/bb6dd46f-d906-4295-8826-bec8db4e3ef7)
