@@ -1,0 +1,59 @@
+pipeline {
+  agent none
+
+  stages {
+     stage ( "Stage 1 - Build Custom Docker Image" ) {
+	agent { label 'built-in' }
+	steps {
+	   dir("Day5/CICD/ansible") {
+		sh "ansible-playbook build-docker-image-playbook.yml"
+           }
+	}
+     }
+
+     stage ( "Stage 2 - compile" ) {
+	agent { label 'docker-jenkins-slave' }
+	steps {
+	   dir("Day5/CICD/maven/multi-module-project") {
+		sh "mvn compile"
+           }
+	}
+     }
+
+     stage ( "Stage 2 - test" ) {
+	agent { label 'docker-jenkins-slave' }
+	steps {
+	   dir("Day5/CICD/maven/multi-module-project") {
+		sh "mvn test"
+           }
+	}
+     }
+
+     stage ( "Stage 2 - package" ) {
+	agent { label 'docker-jenkins-slave' }
+	steps {
+	   dir("Day5/CICD/maven/multi-module-project") {
+		sh "mvn package"
+           }
+	}
+     }
+
+     stage ( "Stage 2 - install" ) {
+	agent { label 'docker-jenkins-slave' }
+	steps {
+	   dir("Day5/CICD/maven/multi-module-project") {
+		sh "mvn install"
+           }
+	}
+     }
+
+     stage ( "Stage 2 - deploy" ) {
+	agent { label 'docker-jenkins-slave' }
+	steps {
+	   dir("Day5/CICD/maven/multi-module-project") {
+		sh "mvn deploy"
+           }
+	}
+     }
+  }
+}

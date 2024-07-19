@@ -1,0 +1,8 @@
+- name: This playbook will install JDK and maven into the ansible ubuntu nodes
+  hosts: all
+  tasks:
+  - name: Install JDK in Ubuntu node
+    apt: name=default-jdk state=latest update_cache=yes
+
+  - name: Install Maven in Ubuntu node
+    apt: name=maven state=latest update_cache=yes
