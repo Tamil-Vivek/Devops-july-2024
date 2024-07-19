@@ -282,6 +282,10 @@ Login to SonarQube web page from your RPS Lab machine
 http://localhost:9000  
 </pre>
 
+Expected output
+![image](https://github.com/user-attachments/assets/5adacae6-4ecd-4d9e-b023-fb1f48456a28)
+
+
 Default Login credentials
 <pre>
 username - admin
