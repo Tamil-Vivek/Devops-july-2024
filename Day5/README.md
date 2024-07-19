@@ -218,3 +218,6 @@ Add Docker Template
 
 Click "Save" button
 ![image](https://github.com/user-attachments/assets/a2158751-b3ab-4d75-b6c1-674c2c395b1d)
+
+## Lab - Creating a CICD Pipeline
+![jenkins](CICD.png)
