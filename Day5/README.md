@@ -107,3 +107,20 @@ mvn clean install
 Click "Save" button
 ![image](https://github.com/user-attachments/assets/635338a7-db10-4244-9fae-f2640a7a030c)
 
+## Lab - Creating a FreeStyle Jenkins Job and triggering Ansible Playbook
+![image](https://github.com/user-attachments/assets/9d123e37-d2e5-4408-a4f7-914148c85300)
+Click "New Item"
+![image](https://github.com/user-attachments/assets/38e8843a-07d0-4234-95dc-30dfdfc5366d)
+Type "Invoke Ansible Playbook" and Copy project from "Freestyle Jenkins Job"
+![image](https://github.com/user-attachments/assets/01f0b72b-9f40-4781-9971-b181f928884b)
+![image](https://github.com/user-attachments/assets/a315a2d0-19bb-437f-8b1c-39d71cdb9752)
+Click "ok" button
+![image](https://github.com/user-attachments/assets/03836181-7679-42f7-9840-c3081c0cd1c9)
+
+Build Steps
+![image](https://github.com/user-attachments/assets/ed0e2f05-54ac-4a74-a496-798670521d7b)
+
+Click "save" button
+![image](https://github.com/user-attachments/assets/8ddf27e1-d5c9-486d-84b3-fbde17d6e8d6)
+
+
