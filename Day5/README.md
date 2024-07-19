@@ -221,3 +221,29 @@ Click "Save" button
 
 ## Lab - Creating a CICD Pipeline
 ![jenkins](CICD.png)
+
+Let's create a declarative pipeline using Jenkinsfile
+![image](https://github.com/user-attachments/assets/0dc33e30-212e-4fa5-9a85-dce320875f9c)
+Click "New Item", let's create a Pipeline project and give it a name "CICD Pipeline"
+![image](https://github.com/user-attachments/assets/e872e2a7-9cf4-4de7-a9b9-f4b690f20101)
+Click "Ok" button
+
+General
+![image](https://github.com/user-attachments/assets/d32ae7b1-2b56-4280-b398-08df1ac03cef)
+
+Build Triggers
+![image](https://github.com/user-attachments/assets/197dc75a-5489-4b5b-a7f2-172001e09092)
+
+Pipeline
+<pre>
+1. Pipeline --> Definition --> Select "Pipeline Script from SCM"
+2. Under SCM --> Select Git
+3. Repository URL - https://github.com/tektutor/devops-july-2024.git
+4. Under Branch Specifier replace "*/master" with "*/main"
+5. Under Script Path, change Jenkinsfile to Day5/CICD/Jenkinsfile
+</pre>
+![image](https://github.com/user-attachments/assets/8bfae090-e3c7-42f1-9bcd-da985fff1615)
+![image](https://github.com/user-attachments/assets/ff8fc567-1f51-4563-a19f-7ca161212830)
+Click "Save" button
+![image](https://github.com/user-attachments/assets/d6cb0b88-cf6b-4145-b354-3eb9c6f0dc56)
+
