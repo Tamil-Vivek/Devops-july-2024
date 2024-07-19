@@ -465,6 +465,7 @@ Make sure the prometheus datasource we created is selected
 ![image](https://github.com/user-attachments/assets/7e98080f-944d-4db2-b215-42925fb3a0ce)
 Click "Import" button to see the dashboard with the Jenkins metrics collected by Protheus
 ![image](https://github.com/user-attachments/assets/b6d2f246-39a0-4ea3-b38b-4391e206862c)
+![image](https://github.com/user-attachments/assets/fd514685-474f-4796-a2a2-0c89c50e4214)
 
 ## Kindly complete the post test from RPS Ubuntu Lab machine
 <pre>
