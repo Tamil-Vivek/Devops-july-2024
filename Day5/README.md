@@ -1,4 +1,4 @@
-# Day 5
+![image](https://github.com/user-attachments/assets/b4e164e9-43e5-4359-932c-8e74c354af36)![image](https://github.com/user-attachments/assets/52737bea-a84a-45ec-91e5-f5ab3b3c50dc)# Day 5
 ## Lab - Installing Docker and Ansible Jenkins Plugins
 ![image](https://github.com/user-attachments/assets/75a8aada-8522-473e-9976-45a5c774acb6)
 Click on "Manage Jenkins"
@@ -266,6 +266,206 @@ Troubleshooting - In case you are not seeing the Pipeline view
 ![image](https://github.com/user-attachments/assets/166d46cf-47c4-4a16-88b6-e587c3be03d9)
 ![image](https://github.com/user-attachments/assets/bb6dd46f-d906-4295-8826-bec8db4e3ef7)
 
+## Lab - Starting SonarQube server as a container
+```
+docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+docker ps
+docker images
+docker logs sonarqube
+```
+Expected output
+![image](https://github.com/user-attachments/assets/96e4a9a9-7662-45b3-8c53-2b2fa4b30862)
+![image](https://github.com/user-attachments/assets/a55561bf-c1d5-468b-8739-af2525bcaf22)
+
+Login to SonarQube web page from your RPS Lab machine
+<pre>
+http://localhost:9000  
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/5adacae6-4ecd-4d9e-b023-fb1f48456a28)
+
+
+Default Login credentials
+<pre>
+username - admin
+password - admin
+</pre>
+
+![image](https://github.com/user-attachments/assets/baed993b-3a49-4e40-98d5-1502ae9147d0)
+
+
+Change the password as below below
+<pre>
+username - admin
+password - Admin@123
+</pre>  
+
+![image](https://github.com/user-attachments/assets/83e09e8f-8b8e-4f73-b681-f43797a4992f)
+
+Once you have updated the password, page looks as shown below
+![image](https://github.com/user-attachments/assets/8d6490f3-fedb-4326-9a7d-f8c3336d8907)
+
+Select "Create a local project"
+![image](https://github.com/user-attachments/assets/c9eb9dd0-f205-409c-bbd4-6a39177b46a2)
+Click Next
+![image](https://github.com/user-attachments/assets/c7dccb60-2795-49c6-990b-a5730c8fddb2)
+Click "Create project"
+Click "Generate" to generate token
+![image](https://github.com/user-attachments/assets/4f2b7c24-02a8-4f8a-bc25-a97f16a06315)
+Save the token somewhere and click "continue" button
+![image](https://github.com/user-attachments/assets/feed9476-e62d-44ab-be3a-7edc440e4186)
+Select "Maven"
+![image](https://github.com/user-attachments/assets/72011fac-1831-4e78-83b6-a0e576eae0f0)
+Copy the maven command and save it in a file
+```
+
+```
+![image](https://github.com/user-attachments/assets/f8a2b9b7-10ed-4946-9431-3d1bbe17f82e)
+![image](https://github.com/user-attachments/assets/e0733fb8-5773-41fb-be83-cecdd50bf15c)
+
+Create a Freestyle Jenkins job with name "SonarStaticCodeAnalysis"
+![image](https://github.com/user-attachments/assets/8df2e511-20d6-4b55-9e59-8a7806768c17)
+
+General
+![image](https://github.com/user-attachments/assets/52eced4c-76a2-493d-9e74-959aae3d0cf9)
+
+Source Code Management
+![image](https://github.com/user-attachments/assets/f9d55d20-3b8e-4fe9-8d67-f0f1d185be0c)
+![image](https://github.com/user-attachments/assets/0d19664a-2071-4084-a0aa-82f0255ae842)
+
+Build Triggers
+![image](https://github.com/user-attachments/assets/0de60cd1-df13-4673-975b-ffa38d1575d7)
+
+Paste the command, Under Build Steps --> Execute Shell
+```
+cd Day5/CICD/maven/multi-module-project
+mvn compile
+
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=tektutor \
+  -Dsonar.projectName='tektutor' \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=sqp_ed147ee226aa61544b603aab780dd323644a6698
+```
+![image](https://github.com/user-attachments/assets/01f9b3fb-c93d-48bc-8376-260ad38b504c)
+![image](https://github.com/user-attachments/assets/cccb981b-548e-4f39-8fd7-25b0d9297a5d)
+![image](https://github.com/user-attachments/assets/27d87fa3-9efa-44a8-a652-1ceea686c0f1)
+![image](https://github.com/user-attachments/assets/70761998-f98f-4067-b59a-52212c7fdb9e)
+
+Save it.
+Wait for it run automatically
+![image](https://github.com/user-attachments/assets/ec11a569-327f-4b46-99b6-aaff8e56d1ac)
+![image](https://github.com/user-attachments/assets/fe4016f6-dd32-48db-b421-ad7c022dd345)
+
+Now, navigate to Sonarqube web page
+![image](https://github.com/user-attachments/assets/4ca35da7-2eb3-402f-9b6b-72d8f456d7bf)
+![image](https://github.com/user-attachments/assets/f1b0799a-d706-47f2-b6aa-e7d089b068ea)
+![image](https://github.com/user-attachments/assets/a66eed57-4ed7-4220-8509-cffccc277fcc)
+![image](https://github.com/user-attachments/assets/ec0062ab-d3f3-43a8-bac1-3a861a6c4f7b)
+
+
+## Lab - Collecting Jenkins Performance metrics using Prometheus
+```
+docker run -d --name prometheus --hostname prometheus -p 9090:9090 bitnami/prometheus:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/24f08f5e-6100-4968-8769-ee489388838d)
+
+Launch prometheus web page
+<pre>
+http://localhost:9090  
+</pre>  
+
+![image](https://github.com/user-attachments/assets/41402740-40ff-4ce4-ab0e-a7e2f37ec264)
+
+We need to install "Prometheus Metrics Plugins" in Jenkins --> Manage Jenkins --> Plugins --> Available Plugins
+![image](https://github.com/user-attachments/assets/3d979b66-e44b-4960-bd53-97d7f70de7df)
+![image](https://github.com/user-attachments/assets/406d3e7f-c638-4522-b3ff-5e19a2e7f503)
+Make sure, Jenkins is restarted
+![image](https://github.com/user-attachments/assets/404bac17-c2bd-438f-badd-b547ccb79ba7)
+![image](https://github.com/user-attachments/assets/375ecf88-ff7e-4e5e-8a1b-5df031de3c52)
+
+You should now be able to access the Jenkins Performance metrics at this REST endpoint url
+<pre>
+http://localhost:8080/prometheus  
+</pre>  
+![image](https://github.com/user-attachments/assets/3d0f9215-e235-4587-84ea-451e21677f7f)
+
+You can copy the prometheus.yml from local machine to prometheus container
+```
+cd ~/devops-july-2024
+cd Day5/prometheus
+docker cp prometheus.yml prometheus:/opt/bitnami/prometheus/conf/prometheus.yml
+docker restart prometheus
+docker ps
+```
+![image](https://github.com/user-attachments/assets/9edb574d-c1a0-4f12-adfc-8268f4bf232b)
+![image](https://github.com/user-attachments/assets/abee834b-6fd5-4fa1-9def-a6c87686e9ae)
+![image](https://github.com/user-attachments/assets/6e465e10-0627-480d-b68e-c5f100064f10)
+
+## Lab - Creating Grafana server container
+```
+docker run -d --name=grafana --hostname=grafana -p 3000:3000 grafana/grafana
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8b0443b3-d06e-4e64-a1b4-029a2c201555)
+![image](https://github.com/user-attachments/assets/d08b6aa3-ed6d-403f-b0ce-3ef6678c3227)
+
+Accessing Grafana Dashboard from web browser
+<pre>
+http://localhost:3000  
+</pre>  
+
+Default Login credentials
+<pre>
+username - admin
+password - admin
+</pre>
+![image](https://github.com/user-attachments/assets/9d407ac3-a6ef-436a-9a3b-e2145ed52888)
+![image](https://github.com/user-attachments/assets/1fb73c77-30e4-48fc-8e26-da40270d27f7)
+Change the password to "Admin@123" without quotes
+![image](https://github.com/user-attachments/assets/2fe7f78c-2512-438f-bc47-5fe0764e236a)
+![image](https://github.com/user-attachments/assets/90f5d855-93b3-41e0-ba24-027ee3f93301)
+
+On the left side menu, select Connections --> Datasources 
+![image](https://github.com/user-attachments/assets/abdebc13-51a6-4f91-8dcc-f123b9507368)
+Add Datasource
+![image](https://github.com/user-attachments/assets/ea7b4d34-0aa0-4354-8f34-4f827bd074a5)
+Select Prometheus
+![image](https://github.com/user-attachments/assets/b14742e4-7a71-4110-b14e-733dc6ca7c6a)
+![image](https://github.com/user-attachments/assets/d82c4fa6-5271-4d6b-ab7f-5fc960f0a7d8)
+Under the Prometheus server url, type 192.168.1.104:9090
+![image](https://github.com/user-attachments/assets/375ad4aa-faeb-4145-9e0b-6f2bace17fbe)
+Authentication, provide prometheus login credentials
+<pre>
+username - admin
+password - Admin@123
+</pre>  
+
+Scroll down
+![image](https://github.com/user-attachments/assets/76604d8a-b786-4aae-9989-f5effc93a2a0)
+Save and Test
+![image](https://github.com/user-attachments/assets/74aa8fc1-4d99-4aec-b607-a89359f83a58)
+
+On the left side menu, select Dashboard
+![image](https://github.com/user-attachments/assets/7a84ab6b-eb3f-4847-b836-c26981ec42e4)
+On the top right corner, click the new and select "import" from the drop-drop option
+![image](https://github.com/user-attachments/assets/5806639a-7f86-415b-ba4f-42ab6212d8a0)
+![image](https://github.com/user-attachments/assets/71c0bde0-cbd3-46ba-b8f4-bc00e8fecb98)
+Under the Grafana ID, type 9964
+![image](https://github.com/user-attachments/assets/914a8bb1-ba42-457a-9199-1b3dfed9a0c2)
+Click on Load
+![image](https://github.com/user-attachments/assets/55869a43-fcf7-475e-8930-cef39f5f317e)
+Make sure the prometheus datasource we created is selected
+![image](https://github.com/user-attachments/assets/7e98080f-944d-4db2-b215-42925fb3a0ce)
+Click "Import" button to see the dashboard with the Jenkins metrics collected by Protheus
+![image](https://github.com/user-attachments/assets/b6d2f246-39a0-4ea3-b38b-4391e206862c)
+![image](https://github.com/user-attachments/assets/fd514685-474f-4796-a2a2-0c89c50e4214)
 
 ## Kindly complete the post test from RPS Ubuntu Lab machine
 <pre>
@@ -276,3 +476,4 @@ https://rpsconsulting116.examly.io/contest/public?U2FsdGVkX19j/JRJUst8ogiG8/LMMq
 <pre>
 https://survey.zohopublic.com/zs/0K0FUi
 </pre>
+
