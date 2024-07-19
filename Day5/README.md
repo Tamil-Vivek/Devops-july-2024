@@ -204,3 +204,5 @@ New Cloud
 Click "Create"
 ![image](https://github.com/user-attachments/assets/ad411d9c-0e72-442b-9afb-1fb4474a2d12)
 Expand "Docker Cloud details"
+![image](https://github.com/user-attachments/assets/03a6b37f-f034-4307-a1b5-91a8d620bf1b)
+![image](https://github.com/user-attachments/assets/3448e9de-1a46-4cc9-af34-34b3ad4c35dc)
