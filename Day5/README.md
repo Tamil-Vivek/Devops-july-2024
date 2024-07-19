@@ -1,5 +1,4 @@
 # Day 5
-
 ## Lab - Installing Docker and Ansible Jenkins Plugins
 ![image](https://github.com/user-attachments/assets/75a8aada-8522-473e-9976-45a5c774acb6)
 Click on "Manage Jenkins"
@@ -108,6 +107,9 @@ Click "Save" button
 ![image](https://github.com/user-attachments/assets/635338a7-db10-4244-9fae-f2640a7a030c)
 
 ## Lab - Creating a FreeStyle Jenkins Job and triggering Ansible Playbook
+Create a file name ~/.become-password-file and type 'rps' without quotes, save and close the file.
+
+
 ![image](https://github.com/user-attachments/assets/9d123e37-d2e5-4408-a4f7-914148c85300)
 Click "New Item"
 ![image](https://github.com/user-attachments/assets/38e8843a-07d0-4234-95dc-30dfdfc5366d)
@@ -125,4 +127,94 @@ Build Steps
 Click "save" button
 ![image](https://github.com/user-attachments/assets/8ddf27e1-d5c9-486d-84b3-fbde17d6e8d6)
 
+![image](https://github.com/user-attachments/assets/219ea628-72bb-46ad-bb1b-557fd4a0ff27)
+![image](https://github.com/user-attachments/assets/4835d240-7aea-47f0-8696-c8ffc63015c0)
+![image](https://github.com/user-attachments/assets/a2661c8b-4f83-469e-8b64-bde069998a02)
 
+## Lab - Invoking Ansible Playing using Ansible Jenkins plugin
+
+### Things to remember
+<pre>
+- Ansible searches for ansible.cfg as mentioned in the ANSIBLE_CONFIG environment variable
+- In case you have exported the ANSIBLE_CONFIG environment variable, then ansible searches for ansible.cfg in the current directory
+- In case, the ansible.cfg is not present in the current folder then ansible searches for .ansible.cfg under your home directory
+- In case, the ~/.ansible.cfg is not found then ansible finally searches ansible.cfg under /etc/ansible/ansible.cfg folder
+- In the above paths, wherever ansible finds the ansible.cfg first it picks it and ignores the other options.
+</pre>
+
+Copy the ansible.cfg from your Day4/ansible folder to your home directory
+```
+cd ~/devops-july-2024
+git pull
+cd Day4/ansible
+cp ansible.cfg ~/.ansible.cfg
+```
+![image](https://github.com/user-attachments/assets/0224fab5-e654-401a-8d55-6c4db4d9770c)
+![image](https://github.com/user-attachments/assets/c1e07efd-c9dd-40cc-824b-51e6acd6e345)
+![image](https://github.com/user-attachments/assets/f7da046e-099a-42a5-8f15-26d018441d21)
+![image](https://github.com/user-attachments/assets/f3a5de23-c4cd-4703-ba8a-d137ff3835e2)
+![image](https://github.com/user-attachments/assets/ff39b648-c3d4-4424-aa4e-46208afd8778)
+![image](https://github.com/user-attachments/assets/661d72cb-b501-4b2f-924a-2341ab4f34ec)
+![image](https://github.com/user-attachments/assets/834722ee-aa0b-4cae-bc9b-9ed638b5b091)
+![image](https://github.com/user-attachments/assets/ae018c98-2ef9-4e01-b1f4-298f4781f93d)
+![image](https://github.com/user-attachments/assets/9d0aaabf-aa9f-4521-8687-0655cda58733)
+![image](https://github.com/user-attachments/assets/37a28a1c-d45d-42b5-827b-c360a7f7afa9)
+![image](https://github.com/user-attachments/assets/c2080087-8784-47db-a313-70606b5fbca1)
+
+## Info - Jenkins Master-Slave Node Setup usecases
+<pre>
+- Currently used Jenkins is the Master Jenkins that comes with Web GUI
+- We could add many slave Jenkins which are headless, they only instructions from Jenkins Master
+- end-users will not able to give instructions or interact with Jenkins slave instances
+- the main usecase of master-slave node setup is
+  - to support executing parallel builds
+  - to support running builds and testing in different OS environments
+- the slave nodes can be ec2 instance running in aws, azure vm instances, or could on-prem virtual machine or physical machine or docker containers
+- in our case, we are going to use docker containers as Jenkins slave nodes
+</pre>
+
+## Lab - Configuring Docker containers as Jenkins slave nodes
+
+We need to configure the Docker Service (Service) - Do this in the terminal
+```
+sudo systemctl status docker
+sudo gedit /usr/lib/systemd/system/docker.service
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+sudo systemctl status docker
+```
+Expected output
+![image](https://github.com/user-attachments/assets/c2cdd716-5613-423b-be5a-8fb197a848c8)
+![image](https://github.com/user-attachments/assets/6e7ba1a9-6f14-4c3a-ba6e-c8741cc4a034)
+![image](https://github.com/user-attachments/assets/8cc99836-ef97-4b7f-af75-8bba37532028)
+Save and exit
+![image](https://github.com/user-attachments/assets/c158c842-9983-47a3-92b6-b1b176bd5890)
+![image](https://github.com/user-attachments/assets/f56b7fb2-af23-4084-bfa4-e90c130c0461)
+
+
+
+![image](https://github.com/user-attachments/assets/881523eb-1092-4196-b200-4992e13514e2)
+Manage Jenkins
+![image](https://github.com/user-attachments/assets/f251e0b1-ed7a-46aa-bec3-37c543c60946)
+Click on "Clouds"
+![image](https://github.com/user-attachments/assets/4bd415e9-738a-4073-91d9-8b3b96c82faf)
+New Cloud
+![image](https://github.com/user-attachments/assets/04a0ed81-9966-4a0f-ace7-5d229a9e7b89)
+![image](https://github.com/user-attachments/assets/cfc91899-124b-46c0-912a-0b41d3c26a6f)
+Click "Create"
+![image](https://github.com/user-attachments/assets/ad411d9c-0e72-442b-9afb-1fb4474a2d12)
+Expand "Docker Cloud details"
+![image](https://github.com/user-attachments/assets/03a6b37f-f034-4307-a1b5-91a8d620bf1b)
+![image](https://github.com/user-attachments/assets/3448e9de-1a46-4cc9-af34-34b3ad4c35dc)
+
+Scroll Down to see "Docker Agent Templates"
+![image](https://github.com/user-attachments/assets/6483f61c-878a-43c6-b8eb-f5900f3dfd54)
+Add Docker Template
+![image](https://github.com/user-attachments/assets/0b238bde-51b2-4d5c-9bea-8331446ee740)
+![image](https://github.com/user-attachments/assets/fcd58715-4c6d-4022-9ffd-4ca2c26204f7)
+![image](https://github.com/user-attachments/assets/a25c33c6-f754-4981-bb4b-2848a571bea5)
+![image](https://github.com/user-attachments/assets/3e156d7a-7ef9-4872-98e3-3f09429612fd)
+![image](https://github.com/user-attachments/assets/335c22e3-da96-48b9-ac8f-0c86a7ead3fc)
+
+Click "Save" button
+![image](https://github.com/user-attachments/assets/a2158751-b3ab-4d75-b6c1-674c2c395b1d)
